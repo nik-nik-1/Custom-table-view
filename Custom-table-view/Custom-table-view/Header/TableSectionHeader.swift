@@ -6,8 +6,10 @@
 //  Copyright © 2016 mc373. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
+@IBDesignable
 class TableSectionHeader: UITableViewHeaderFooterView {
 
+    @IBOutlet weak var captionLabel: UILabel!
 }

@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		E7D0015F1D12D40A00A26114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D0015E1D12D40A00A26114 /* AppDelegate.swift */; };
-		E7D001611D12D40A00A26114 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001601D12D40A00A26114 /* ViewController.swift */; };
+		E7D001611D12D40A00A26114 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001601D12D40A00A26114 /* MainTableViewController.swift */; };
 		E7D001641D12D40A00A26114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D001621D12D40A00A26114 /* Main.storyboard */; };
 		E7D001661D12D40A00A26114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D001651D12D40A00A26114 /* Assets.xcassets */; };
 		E7D001691D12D40A00A26114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D001671D12D40A00A26114 /* LaunchScreen.storyboard */; };
+		E7D001721D12D5E800A26114 /* TableSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001711D12D5E800A26114 /* TableSectionHeader.swift */; };
+		E7D001741D12D6BA00A26114 /* View.TableSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001731D12D6BA00A26114 /* View.TableSectionHeader.xib */; };
+		E7D001781D12EA4400A26114 /* TableSectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001771D12EA4400A26114 /* TableSectionFooter.swift */; };
+		E7D0017A1D12EA6900A26114 /* View.TableSectionFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001791D12EA6900A26114 /* View.TableSectionFooter.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7D0015B1D12D40A00A26114 /* Custom-table-view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom-table-view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D0015E1D12D40A00A26114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7D001601D12D40A00A26114 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E7D001601D12D40A00A26114 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		E7D001631D12D40A00A26114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7D001651D12D40A00A26114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7D001681D12D40A00A26114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7D0016A1D12D40A00A26114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7D001711D12D5E800A26114 /* TableSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionHeader.swift; sourceTree = "<group>"; };
+		E7D001731D12D6BA00A26114 /* View.TableSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.TableSectionHeader.xib; sourceTree = "<group>"; };
+		E7D001771D12EA4400A26114 /* TableSectionFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionFooter.swift; sourceTree = "<group>"; };
+		E7D001791D12EA6900A26114 /* View.TableSectionFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.TableSectionFooter.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,42 @@
 		E7D0015D1D12D40A00A26114 /* Custom-table-view */ = {
 			isa = PBXGroup;
 			children = (
+				E7D001701D12D57400A26114 /* Header */,
+				E7D001751D12E98500A26114 /* Cell */,
+				E7D001761D12E98500A26114 /* Footer */,
 				E7D0015E1D12D40A00A26114 /* AppDelegate.swift */,
-				E7D001601D12D40A00A26114 /* ViewController.swift */,
+				E7D001601D12D40A00A26114 /* MainTableViewController.swift */,
 				E7D001621D12D40A00A26114 /* Main.storyboard */,
 				E7D001651D12D40A00A26114 /* Assets.xcassets */,
 				E7D001671D12D40A00A26114 /* LaunchScreen.storyboard */,
 				E7D0016A1D12D40A00A26114 /* Info.plist */,
 			);
 			path = "Custom-table-view";
+			sourceTree = "<group>";
+		};
+		E7D001701D12D57400A26114 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				E7D001711D12D5E800A26114 /* TableSectionHeader.swift */,
+				E7D001731D12D6BA00A26114 /* View.TableSectionHeader.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		E7D001751D12E98500A26114 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E7D001761D12E98500A26114 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				E7D001771D12EA4400A26114 /* TableSectionFooter.swift */,
+				E7D001791D12EA6900A26114 /* View.TableSectionFooter.xib */,
+			);
+			path = Footer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,7 +160,9 @@
 			files = (
 				E7D001691D12D40A00A26114 /* LaunchScreen.storyboard in Resources */,
 				E7D001661D12D40A00A26114 /* Assets.xcassets in Resources */,
+				E7D0017A1D12EA6900A26114 /* View.TableSectionFooter.xib in Resources */,
 				E7D001641D12D40A00A26114 /* Main.storyboard in Resources */,
+				E7D001741D12D6BA00A26114 /* View.TableSectionHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D001611D12D40A00A26114 /* ViewController.swift in Sources */,
+				E7D001611D12D40A00A26114 /* MainTableViewController.swift in Sources */,
+				E7D001721D12D5E800A26114 /* TableSectionHeader.swift in Sources */,
 				E7D0015F1D12D40A00A26114 /* AppDelegate.swift in Sources */,
+				E7D001781D12EA4400A26114 /* TableSectionFooter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
