@@ -23,6 +23,9 @@
 		E7D001A81D1423A400A26114 /* View.TableSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001A11D1423A400A26114 /* View.TableSectionHeader.xib */; };
 		E7D001AD1D14246B00A26114 /* TableCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001AB1D14246B00A26114 /* TableCustom.swift */; };
 		E7D001AE1D14246B00A26114 /* TableCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001AC1D14246B00A26114 /* TableCustom.xib */; };
+		E7D001B11D1588BC00A26114 /* TableCustomCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001AF1D1588BC00A26114 /* TableCustomCotroller.swift */; };
+		E7D001B21D1588BC00A26114 /* TableCustomCotroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001B01D1588BC00A26114 /* TableCustomCotroller.xib */; };
+		E7D001B41D15892B00A26114 /* TableCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001B31D15892B00A26114 /* TableCustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		E7D001A11D1423A400A26114 /* View.TableSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.TableSectionHeader.xib; sourceTree = "<group>"; };
 		E7D001AB1D14246B00A26114 /* TableCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCustom.swift; sourceTree = "<group>"; };
 		E7D001AC1D14246B00A26114 /* TableCustom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCustom.xib; sourceTree = "<group>"; };
+		E7D001AF1D1588BC00A26114 /* TableCustomCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCustomCotroller.swift; sourceTree = "<group>"; };
+		E7D001B01D1588BC00A26114 /* TableCustomCotroller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCustomCotroller.xib; sourceTree = "<group>"; };
+		E7D001B31D15892B00A26114 /* TableCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,9 @@
 				E7D0019F1D1423A400A26114 /* Header */,
 				E7D001981D1423A400A26114 /* Cell */,
 				E7D0019C1D1423A400A26114 /* Footer */,
+				E7D001AF1D1588BC00A26114 /* TableCustomCotroller.swift */,
+				E7D001B31D15892B00A26114 /* TableCustomView.swift */,
+				E7D001B01D1588BC00A26114 /* TableCustomCotroller.xib */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -205,6 +214,7 @@
 			files = (
 				E7D001AE1D14246B00A26114 /* TableCustom.xib in Resources */,
 				E7D001A31D1423A400A26114 /* View.TableSectionCell.xib in Resources */,
+				E7D001B21D1588BC00A26114 /* TableCustomCotroller.xib in Resources */,
 				E7D001691D12D40A00A26114 /* LaunchScreen.storyboard in Resources */,
 				E7D001A61D1423A400A26114 /* View.TableSectionFooter.xib in Resources */,
 				E7D001A81D1423A400A26114 /* View.TableSectionHeader.xib in Resources */,
@@ -224,7 +234,9 @@
 				E7D001911D13F9FA00A26114 /* UIColor.swift in Sources */,
 				E7D001AD1D14246B00A26114 /* TableCustom.swift in Sources */,
 				E7D0015F1D12D40A00A26114 /* AppDelegate.swift in Sources */,
+				E7D001B11D1588BC00A26114 /* TableCustomCotroller.swift in Sources */,
 				E7D001941D14004000A26114 /* String.swift in Sources */,
+				E7D001B41D15892B00A26114 /* TableCustomView.swift in Sources */,
 				E7D001A21D1423A400A26114 /* TableSectionCell.swift in Sources */,
 				E7D001921D13F9FA00A26114 /* UIView_Borders.swift in Sources */,
 				E7D001A71D1423A400A26114 /* TableSectionHeader.swift in Sources */,
