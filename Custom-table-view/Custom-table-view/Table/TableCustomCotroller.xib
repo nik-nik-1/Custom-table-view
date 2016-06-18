@@ -24,7 +24,7 @@
                     </connections>
                 </tableView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GH3-QB-B3w" customClass="TableSectionHeader" customModule="Custom_table_view" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="0.0" width="1000" height="120"/>
+                    <rect key="frame" x="0.0" y="0.0" width="1000" height="108"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>
