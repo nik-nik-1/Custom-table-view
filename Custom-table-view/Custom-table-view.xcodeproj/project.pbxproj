@@ -17,7 +17,6 @@
 		E7D001941D14004000A26114 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001931D14004000A26114 /* String.swift */; };
 		E7D001A21D1423A400A26114 /* TableSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001991D1423A400A26114 /* TableSectionCell.swift */; };
 		E7D001A31D1423A400A26114 /* View.TableSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D0019A1D1423A400A26114 /* View.TableSectionCell.xib */; };
-		E7D001A41D1423A400A26114 /* ViewTableSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D0019B1D1423A400A26114 /* ViewTableSectionCell.swift */; };
 		E7D001A51D1423A400A26114 /* TableSectionFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D0019D1D1423A400A26114 /* TableSectionFooter.swift */; };
 		E7D001A61D1423A400A26114 /* View.TableSectionFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D0019E1D1423A400A26114 /* View.TableSectionFooter.xib */; };
 		E7D001A71D1423A400A26114 /* TableSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001A01D1423A400A26114 /* TableSectionHeader.swift */; };
@@ -39,7 +38,6 @@
 		E7D001931D14004000A26114 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E7D001991D1423A400A26114 /* TableSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionCell.swift; sourceTree = "<group>"; };
 		E7D0019A1D1423A400A26114 /* View.TableSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.TableSectionCell.xib; sourceTree = "<group>"; };
-		E7D0019B1D1423A400A26114 /* ViewTableSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewTableSectionCell.swift; sourceTree = "<group>"; };
 		E7D0019D1D1423A400A26114 /* TableSectionFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionFooter.swift; sourceTree = "<group>"; };
 		E7D0019E1D1423A400A26114 /* View.TableSectionFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.TableSectionFooter.xib; sourceTree = "<group>"; };
 		E7D001A01D1423A400A26114 /* TableSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionHeader.swift; sourceTree = "<group>"; };
@@ -78,8 +76,8 @@
 		E7D0015D1D12D40A00A26114 /* Custom-table-view */ = {
 			isa = PBXGroup;
 			children = (
-				E7D001971D1423A400A26114 /* Table */,
 				E7D0015E1D12D40A00A26114 /* AppDelegate.swift */,
+				E7D001971D1423A400A26114 /* Table */,
 				E7D0018D1D13F9FA00A26114 /* Helper */,
 				E7D001601D12D40A00A26114 /* MainTableViewController.swift */,
 				E7D001621D12D40A00A26114 /* Main.storyboard */,
@@ -125,7 +123,6 @@
 			children = (
 				E7D001991D1423A400A26114 /* TableSectionCell.swift */,
 				E7D0019A1D1423A400A26114 /* View.TableSectionCell.xib */,
-				E7D0019B1D1423A400A26114 /* ViewTableSectionCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -223,7 +220,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D001A41D1423A400A26114 /* ViewTableSectionCell.swift in Sources */,
 				E7D001611D12D40A00A26114 /* MainTableViewController.swift in Sources */,
 				E7D001911D13F9FA00A26114 /* UIColor.swift in Sources */,
 				E7D001AD1D14246B00A26114 /* TableCustom.swift in Sources */,

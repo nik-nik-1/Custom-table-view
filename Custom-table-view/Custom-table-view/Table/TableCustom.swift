@@ -61,10 +61,10 @@ class TableCustom: UITableViewController {
         let header = cell as! TableSectionHeader
         header.headerLabel.text = title
         
-        header.contentView.backgroundColor = UIColor.blueColor()//UIColor(hex: "#FF9090",alpha: 0.8)
-        header.tintColor = UIColor.blueColor()
-        header.headerLabel.textColor = UIColor.blackColor()
-        header.alpha = 0.5
+//        header.contentView.backgroundColor = UIColor.blueColor()//UIColor(hex: "#FF9090",alpha: 0.8)
+//        header.tintColor = UIColor.blueColor()
+//        header.headerLabel.textColor = UIColor.blackColor()
+//        header.alpha = 0.5
 
         
         return header
