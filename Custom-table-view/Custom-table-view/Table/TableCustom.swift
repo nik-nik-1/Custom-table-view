@@ -59,7 +59,7 @@ class TableCustom: UITableViewController {
         // Dequeue with the reuse identifier
         let cell = self.tableView.dequeueReusableHeaderFooterViewWithIdentifier("TableSectionHeader")
         let header = cell as! TableSectionHeader
-        header.headerLabel.text = title
+//        header.headerLabel.text = title
         
 //        header.contentView.backgroundColor = UIColor.blueColor()//UIColor(hex: "#FF9090",alpha: 0.8)
 //        header.tintColor = UIColor.blueColor()
