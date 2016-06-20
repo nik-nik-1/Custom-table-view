@@ -12,11 +12,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="HTe-Kh-zcN">
-            <rect key="frame" x="0.0" y="0.0" width="1000" height="500"/>
+            <rect key="frame" x="0.0" y="0.0" width="1000" height="400"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="tableSection" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT" userLabel="tableSection" customClass="TableCustomView" customModule="Custom_table_view" customModuleProvider="target">
-                    <rect key="frame" x="0.0" y="110" width="600" height="400"/>
+                    <rect key="frame" x="0.0" y="110" width="1000" height="229"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Tng-2m-Rnh"/>
@@ -25,6 +25,10 @@
                 </tableView>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GH3-QB-B3w" customClass="TableSectionHeader" customModule="Custom_table_view" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="1000" height="108"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wRr-VN-ho1" customClass="TableSectionFooter" customModule="Custom_table_view" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="340" width="1000" height="60"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
             </subviews>

@@ -12,12 +12,12 @@ import UIKit
 class TableSectionHeader: UIView {//UITableViewHeaderFooterView
 //{
     
-    // Our custom view from the XIB file
-    var view: UIView!
-    
     // Outlets
     @IBOutlet weak var label1: UILabel!
     //@IBOutlet weak var conView: UIView!
+    
+    // Our custom view from the XIB file
+    var view: UIView!
     
     override init(frame: CGRect) {
         // 1. setup any properties here

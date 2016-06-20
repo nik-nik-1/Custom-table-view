@@ -74,7 +74,7 @@ class TableCustom: UITableViewController {
         
         let cell = self.tableView.dequeueReusableHeaderFooterViewWithIdentifier("TableSectionFooter")
         let footer = cell as! TableSectionFooter
-        footer.footerLabel.text = "footer text"
+        //footer.footerLabel.text = "footer text"
         
         
 //        footer.contentView.backgroundColor = UIColor(hex: "#89C4FF",alpha: 0.8)

@@ -82,9 +82,10 @@
 		E7D0015D1D12D40A00A26114 /* Custom-table-view */ = {
 			isa = PBXGroup;
 			children = (
+				E7D001B51D17F4B400A26114 /* Model */,
+				E7D0018D1D13F9FA00A26114 /* Helper */,
 				E7D0015E1D12D40A00A26114 /* AppDelegate.swift */,
 				E7D001971D1423A400A26114 /* Table */,
-				E7D0018D1D13F9FA00A26114 /* Helper */,
 				E7D001601D12D40A00A26114 /* MainTableViewController.swift */,
 				E7D001621D12D40A00A26114 /* Main.storyboard */,
 				E7D001651D12D40A00A26114 /* Assets.xcassets */,
@@ -152,6 +153,13 @@
 				E7D001A11D1423A400A26114 /* View.TableSectionHeader.xib */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		E7D001B51D17F4B400A26114 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
