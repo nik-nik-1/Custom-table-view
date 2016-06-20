@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="1000" height="60"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZQ-yw-vRg">
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ZQ-yw-vRg" userLabel="Stack View 1">
                     <rect key="frame" x="0.0" y="0.0" width="1000" height="60"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTO-OG-h6q" userLabel="CellСolumn0">
@@ -26,6 +26,7 @@
                             </subviews>
                             <color key="backgroundColor" red="1" green="0.81176470590000005" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
+                                <constraint firstAttribute="width" constant="400" id="Cdt-WY-m9a"/>
                                 <constraint firstItem="yz5-bO-pJT" firstAttribute="centerY" secondItem="dTO-OG-h6q" secondAttribute="centerY" id="UwM-0Y-Nki"/>
                                 <constraint firstAttribute="trailing" secondItem="yz5-bO-pJT" secondAttribute="trailing" constant="5" id="pl0-TM-lTW"/>
                                 <constraint firstItem="yz5-bO-pJT" firstAttribute="leading" secondItem="dTO-OG-h6q" secondAttribute="leading" constant="5" id="spt-u9-A87"/>
@@ -39,7 +40,7 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HBo-i3-spt">
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HBo-i3-spt" userLabel="Stack View 2">
                             <rect key="frame" x="400" y="0.0" width="600" height="60"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CrX-bn-L6e" userLabel="CellСolumn1">
@@ -120,9 +121,6 @@
                             </subviews>
                         </stackView>
                     </subviews>
-                    <constraints>
-                        <constraint firstItem="HBo-i3-spt" firstAttribute="leading" secondItem="1ZQ-yw-vRg" secondAttribute="leading" constant="400" id="QbD-pM-sAz"/>
-                    </constraints>
                 </stackView>
             </subviews>
             <constraints>

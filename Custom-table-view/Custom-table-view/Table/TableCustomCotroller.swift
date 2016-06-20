@@ -8,8 +8,11 @@
 
 import UIKit
 
+
 class TableCustomCotroller: UITableViewController {
-        
+    
+    let dataModel = DataModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +21,10 @@ class TableCustomCotroller: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let cellNib = UINib(nibName: "View.TableSectionCell", bundle: nil)
+        tableView.registerNib(cellNib, forCellReuseIdentifier: "TableSectionCell")
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,19 +41,28 @@ class TableCustomCotroller: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return dataModel.items.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("TableSectionCell", forIndexPath: indexPath) as! TableSectionCell
 
         // Configure the cell...
-
+        //cell.cellLabel.text = items[indexPath.row]
+       
         return cell
     }
-    */
+    
 
+    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let cell = cell as! TableSectionCell
+        cell.contentView.backgroundColor = UIColor(hex: "#FFCF7F",alpha: 0.8)
+        cell.cellLabel.textColor = UIColor.darkTextColor()
+        cell.alpha = 0.5
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

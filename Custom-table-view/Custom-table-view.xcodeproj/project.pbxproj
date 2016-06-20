@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E7D0015F1D12D40A00A26114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D0015E1D12D40A00A26114 /* AppDelegate.swift */; };
-		E7D001611D12D40A00A26114 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001601D12D40A00A26114 /* MainTableViewController.swift */; };
 		E7D001641D12D40A00A26114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D001621D12D40A00A26114 /* Main.storyboard */; };
 		E7D001661D12D40A00A26114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D001651D12D40A00A26114 /* Assets.xcassets */; };
 		E7D001691D12D40A00A26114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D001671D12D40A00A26114 /* LaunchScreen.storyboard */; };
@@ -21,21 +20,22 @@
 		E7D001A61D1423A400A26114 /* View.TableSectionFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D0019E1D1423A400A26114 /* View.TableSectionFooter.xib */; };
 		E7D001A71D1423A400A26114 /* TableSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001A01D1423A400A26114 /* TableSectionHeader.swift */; };
 		E7D001A81D1423A400A26114 /* View.TableSectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001A11D1423A400A26114 /* View.TableSectionHeader.xib */; };
-		E7D001AD1D14246B00A26114 /* TableCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001AB1D14246B00A26114 /* TableCustom.swift */; };
-		E7D001AE1D14246B00A26114 /* TableCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001AC1D14246B00A26114 /* TableCustom.xib */; };
 		E7D001B11D1588BC00A26114 /* TableCustomCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001AF1D1588BC00A26114 /* TableCustomCotroller.swift */; };
-		E7D001B21D1588BC00A26114 /* TableCustomCotroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001B01D1588BC00A26114 /* TableCustomCotroller.xib */; };
+		E7D001B21D1588BC00A26114 /* CustomTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001B01D1588BC00A26114 /* CustomTable.xib */; };
 		E7D001B41D15892B00A26114 /* TableCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001B31D15892B00A26114 /* TableCustomView.swift */; };
+		E7D001B71D17F4FE00A26114 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001B61D17F4FE00A26114 /* DataModel.swift */; };
+		E7D001BB1D17F62900A26114 /* TableCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001B91D17F62900A26114 /* TableCustom.swift */; };
+		E7D001BC1D17F62900A26114 /* TableCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001BA1D17F62900A26114 /* TableCustom.xib */; };
+		E7D001C51D1804E300A26114 /* CustomTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001C41D1804E200A26114 /* CustomTable.swift */; };
+		E7D001C71D1819AC00A26114 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001C61D1819AC00A26114 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7D0015B1D12D40A00A26114 /* Custom-table-view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom-table-view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D0015E1D12D40A00A26114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7D001601D12D40A00A26114 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		E7D001631D12D40A00A26114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E7D001651D12D40A00A26114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E7D001651D12D40A00A26114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		E7D001681D12D40A00A26114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E7D0016A1D12D40A00A26114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7D0018F1D13F9FA00A26114 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		E7D001901D13F9FA00A26114 /* UIView_Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Borders.swift; sourceTree = "<group>"; };
 		E7D001931D14004000A26114 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -45,11 +45,15 @@
 		E7D0019E1D1423A400A26114 /* View.TableSectionFooter.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.TableSectionFooter.xib; sourceTree = "<group>"; };
 		E7D001A01D1423A400A26114 /* TableSectionHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionHeader.swift; sourceTree = "<group>"; };
 		E7D001A11D1423A400A26114 /* View.TableSectionHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.TableSectionHeader.xib; sourceTree = "<group>"; };
-		E7D001AB1D14246B00A26114 /* TableCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCustom.swift; sourceTree = "<group>"; };
-		E7D001AC1D14246B00A26114 /* TableCustom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCustom.xib; sourceTree = "<group>"; };
 		E7D001AF1D1588BC00A26114 /* TableCustomCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCustomCotroller.swift; sourceTree = "<group>"; };
-		E7D001B01D1588BC00A26114 /* TableCustomCotroller.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCustomCotroller.xib; sourceTree = "<group>"; };
+		E7D001B01D1588BC00A26114 /* CustomTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomTable.xib; sourceTree = "<group>"; };
 		E7D001B31D15892B00A26114 /* TableCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCustomView.swift; sourceTree = "<group>"; };
+		E7D001B61D17F4FE00A26114 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		E7D001B91D17F62900A26114 /* TableCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCustom.swift; sourceTree = "<group>"; };
+		E7D001BA1D17F62900A26114 /* TableCustom.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableCustom.xib; sourceTree = "<group>"; };
+		E7D001C21D17F72B00A26114 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		E7D001C41D1804E200A26114 /* CustomTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTable.swift; sourceTree = "<group>"; };
+		E7D001C61D1819AC00A26114 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				E7D0015D1D12D40A00A26114 /* Custom-table-view */,
+				E7D001BD1D17F65000A26114 /* Source */,
+				E7D001B81D17F62900A26114 /* Trash */,
 				E7D0015C1D12D40A00A26114 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,11 +92,8 @@
 				E7D0018D1D13F9FA00A26114 /* Helper */,
 				E7D0015E1D12D40A00A26114 /* AppDelegate.swift */,
 				E7D001971D1423A400A26114 /* Table */,
-				E7D001601D12D40A00A26114 /* MainTableViewController.swift */,
 				E7D001621D12D40A00A26114 /* Main.storyboard */,
-				E7D001651D12D40A00A26114 /* Assets.xcassets */,
-				E7D001671D12D40A00A26114 /* LaunchScreen.storyboard */,
-				E7D0016A1D12D40A00A26114 /* Info.plist */,
+				E7D001C61D1819AC00A26114 /* MainViewController.swift */,
 			);
 			path = "Custom-table-view";
 			sourceTree = "<group>";
@@ -116,14 +119,13 @@
 		E7D001971D1423A400A26114 /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				E7D001AB1D14246B00A26114 /* TableCustom.swift */,
-				E7D001AC1D14246B00A26114 /* TableCustom.xib */,
 				E7D0019F1D1423A400A26114 /* Header */,
 				E7D001981D1423A400A26114 /* Cell */,
 				E7D0019C1D1423A400A26114 /* Footer */,
 				E7D001AF1D1588BC00A26114 /* TableCustomCotroller.swift */,
+				E7D001C41D1804E200A26114 /* CustomTable.swift */,
 				E7D001B31D15892B00A26114 /* TableCustomView.swift */,
-				E7D001B01D1588BC00A26114 /* TableCustomCotroller.xib */,
+				E7D001B01D1588BC00A26114 /* CustomTable.xib */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -158,8 +160,30 @@
 		E7D001B51D17F4B400A26114 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E7D001B61D17F4FE00A26114 /* DataModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E7D001B81D17F62900A26114 /* Trash */ = {
+			isa = PBXGroup;
+			children = (
+				E7D001B91D17F62900A26114 /* TableCustom.swift */,
+				E7D001BA1D17F62900A26114 /* TableCustom.xib */,
+			);
+			name = Trash;
+			path = "Custom-table-view/Trash";
+			sourceTree = "<group>";
+		};
+		E7D001BD1D17F65000A26114 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E7D001C21D17F72B00A26114 /* Info.plist */,
+				E7D001651D12D40A00A26114 /* Assets.xcassets */,
+				E7D001671D12D40A00A26114 /* LaunchScreen.storyboard */,
+			);
+			name = Source;
+			path = "Custom-table-view/Source";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,10 +244,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D001AE1D14246B00A26114 /* TableCustom.xib in Resources */,
 				E7D001A31D1423A400A26114 /* View.TableSectionCell.xib in Resources */,
-				E7D001B21D1588BC00A26114 /* TableCustomCotroller.xib in Resources */,
+				E7D001B21D1588BC00A26114 /* CustomTable.xib in Resources */,
 				E7D001691D12D40A00A26114 /* LaunchScreen.storyboard in Resources */,
+				E7D001BC1D17F62900A26114 /* TableCustom.xib in Resources */,
 				E7D001A61D1423A400A26114 /* View.TableSectionFooter.xib in Resources */,
 				E7D001A81D1423A400A26114 /* View.TableSectionHeader.xib in Resources */,
 				E7D001661D12D40A00A26114 /* Assets.xcassets in Resources */,
@@ -238,17 +262,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D001611D12D40A00A26114 /* MainTableViewController.swift in Sources */,
 				E7D001911D13F9FA00A26114 /* UIColor.swift in Sources */,
-				E7D001AD1D14246B00A26114 /* TableCustom.swift in Sources */,
+				E7D001C71D1819AC00A26114 /* MainViewController.swift in Sources */,
 				E7D0015F1D12D40A00A26114 /* AppDelegate.swift in Sources */,
 				E7D001B11D1588BC00A26114 /* TableCustomCotroller.swift in Sources */,
+				E7D001B71D17F4FE00A26114 /* DataModel.swift in Sources */,
 				E7D001941D14004000A26114 /* String.swift in Sources */,
 				E7D001B41D15892B00A26114 /* TableCustomView.swift in Sources */,
+				E7D001BB1D17F62900A26114 /* TableCustom.swift in Sources */,
 				E7D001A21D1423A400A26114 /* TableSectionCell.swift in Sources */,
 				E7D001921D13F9FA00A26114 /* UIView_Borders.swift in Sources */,
 				E7D001A71D1423A400A26114 /* TableSectionHeader.swift in Sources */,
 				E7D001A51D1423A400A26114 /* TableSectionFooter.swift in Sources */,
+				E7D001C51D1804E300A26114 /* CustomTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +295,7 @@
 				E7D001681D12D40A00A26114 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
