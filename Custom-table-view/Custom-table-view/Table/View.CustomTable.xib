@@ -17,22 +17,34 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GH3-QB-B3w" customClass="TableSectionHeader" customModule="Custom_table_view" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="1000" height="120"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.92156862750000001" green="0.34509803919999998" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="120" id="kvL-hO-5aI"/>
                     </constraints>
                 </view>
-                <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="tableSection" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT" userLabel="tableSection">
-                    <rect key="frame" x="0.0" y="134" width="1000" height="184"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <connections>
-                        <outlet property="dataSource" destination="biQ-c3-9LN" id="XqQ-iO-5fP"/>
-                        <outlet property="delegate" destination="biQ-c3-9LN" id="Qbp-v0-Rer"/>
-                    </connections>
-                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTq-nj-bnw" userLabel="tableView">
+                    <rect key="frame" x="0.0" y="125" width="1000" height="210"/>
+                    <subviews>
+                        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT" customClass="TableCustomView" customModule="Custom_table_view" customModuleProvider="target">
+                            <rect key="frame" x="5" y="5" width="990" height="200"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="biQ-c3-9LN" id="XqQ-iO-5fP"/>
+                                <outlet property="delegate" destination="biQ-c3-9LN" id="Qbp-v0-Rer"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.81176470590000005" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" constant="5" id="2hl-Fd-Om2"/>
+                        <constraint firstItem="i5M-Pr-FkT" firstAttribute="top" secondItem="DTq-nj-bnw" secondAttribute="top" constant="5" id="2rO-eX-OMr"/>
+                        <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="DTq-nj-bnw" secondAttribute="leading" constant="5" id="OAA-Pf-u9C"/>
+                        <constraint firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="5" id="RCo-Me-sFs"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wRr-VN-ho1" customClass="TableSectionFooter" customModule="Custom_table_view" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="340" width="1000" height="60"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="HGI-AY-D61"/>
                     </constraints>
@@ -40,16 +52,16 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="i5M-Pr-FkT" firstAttribute="top" secondItem="GH3-QB-B3w" secondAttribute="bottom" constant="14" id="GA0-ko-VUl"/>
+                <constraint firstItem="DTq-nj-bnw" firstAttribute="top" secondItem="GH3-QB-B3w" secondAttribute="bottom" constant="5" id="Cib-68-nwh"/>
                 <constraint firstAttribute="trailing" secondItem="GH3-QB-B3w" secondAttribute="trailing" id="GNm-dD-p5X"/>
                 <constraint firstItem="wRr-VN-ho1" firstAttribute="leading" secondItem="HTe-Kh-zcN" secondAttribute="leading" id="GVn-I2-0bp"/>
                 <constraint firstItem="GH3-QB-B3w" firstAttribute="top" secondItem="HTe-Kh-zcN" secondAttribute="top" id="GxA-lM-4Zd"/>
-                <constraint firstItem="wRr-VN-ho1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="22" id="XTo-dA-PQA"/>
-                <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="HTe-Kh-zcN" secondAttribute="leading" id="ace-eU-tgy"/>
+                <constraint firstItem="wRr-VN-ho1" firstAttribute="top" secondItem="DTq-nj-bnw" secondAttribute="bottom" constant="5" id="JYy-is-xKC"/>
+                <constraint firstItem="DTq-nj-bnw" firstAttribute="leading" secondItem="HTe-Kh-zcN" secondAttribute="leading" id="WnS-W9-01D"/>
+                <constraint firstAttribute="trailing" secondItem="DTq-nj-bnw" secondAttribute="trailing" id="Ylt-OE-iun"/>
                 <constraint firstAttribute="bottom" secondItem="wRr-VN-ho1" secondAttribute="bottom" id="hfI-VR-O3x"/>
                 <constraint firstAttribute="trailing" secondItem="wRr-VN-ho1" secondAttribute="trailing" id="qrf-Xn-fsB"/>
                 <constraint firstItem="GH3-QB-B3w" firstAttribute="leading" secondItem="HTe-Kh-zcN" secondAttribute="leading" id="vGp-E5-wHb"/>
-                <constraint firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="yen-UK-GrT"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

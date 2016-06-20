@@ -27,7 +27,7 @@ class CustomTable: UIView {
     }
     
     private func commonInit() {
-        NSBundle.mainBundle().loadNibNamed("CustomTable", owner: self, options: nil)
+        NSBundle.mainBundle().loadNibNamed("View.CustomTable", owner: self, options: nil)
         guard let content = contentView else { return }
         content.frame = self.bounds
         content.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
