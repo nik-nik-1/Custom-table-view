@@ -41,6 +41,8 @@ class CustomTable: UIView {
    // Our custom view from the XIB file
     var view: UIView!
     
+    @IBOutlet var customTableViewController: TableCustomCotroller!
+    
     override init(frame: CGRect) {
         // 1. setup any properties here
         
@@ -49,6 +51,7 @@ class CustomTable: UIView {
         
         // 3. Setup view from .xib file
         xibSetup()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -72,6 +75,8 @@ class CustomTable: UIView {
         
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(view)
+        
+        customTableViewController.viewDidLoad()
     }
     
     func loadViewFromNib() -> UIView {

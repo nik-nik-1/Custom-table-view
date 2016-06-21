@@ -46,28 +46,35 @@ class TableCustomCotroller: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("TableSectionCell", forIndexPath: indexPath) as? TableSectionCell
+//        var cell = tableView.dequeueReusableCellWithIdentifier("TableSectionCell", forIndexPath: indexPath) as? TableSectionCell
 
+        
 //        if (cell == nil) {
 //            // Load the nib and assign an owner
 //            let topLevelObjects = NSBundle.mainBundle().loadNibNamed("View.TableSectionCell", owner: self, options: nil);
 //            cell = topLevelObjects.first as? TableSectionCell
+       let  cell = NSBundle.mainBundle().loadNibNamed("View.TableSectionCell", owner: nil, options: nil)[0] as? TableSectionCell
 //        }
+
+        if cell != nil {
+            cell?.column0?.text = "123"
+        }
+        
 
         
         // Configure the cell...
-        //cell.cellLabel.text = items[indexPath.row]
+//        cell.cellLabel.text = items[indexPath.row]
        
         return cell!
     }
     
 
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        
-        let cell = cell as! TableSectionCell
-        cell.contentView.backgroundColor = UIColor(hex: "#FFCF7F",alpha: 0.8)
-//        cell.cellLabel.textColor = UIColor.darkTextColor()
-        cell.alpha = 0.5
+//        
+//        let cell = cell as! TableSectionCell
+//        cell.contentView.backgroundColor = UIColor(hex: "#FFCF7F",alpha: 0.8)
+////        cell.cellLabel.textColor = UIColor.darkTextColor()
+//        cell.alpha = 0.5
     }
     
     /*

@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTable" customModule="Custom_table_view" customModuleProvider="target">
             <connections>
+                <outlet property="customTableViewController" destination="j33-nH-e7j" id="qA5-va-KTx"/>
                 <outlet property="footerOfTable" destination="wRr-VN-ho1" id="aUH-Jj-iQn"/>
                 <outlet property="headerOfTable" destination="GH3-QB-B3w" id="yDH-Ge-Yw6"/>
                 <outlet property="sectionOfCellinTable" destination="i5M-Pr-FkT" id="PiG-97-C8Z"/>
@@ -28,19 +29,19 @@
                     <rect key="frame" x="0.0" y="72" width="1000" height="291"/>
                     <subviews>
                         <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT" customClass="TableCustomView" customModule="Custom_table_view" customModuleProvider="target">
-                            <rect key="frame" x="5" y="5" width="990" height="281"/>
+                            <rect key="frame" x="0.0" y="5" width="1000" height="281"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <outlet property="dataSource" destination="biQ-c3-9LN" id="XqQ-iO-5fP"/>
-                                <outlet property="delegate" destination="biQ-c3-9LN" id="Qbp-v0-Rer"/>
+                                <outlet property="dataSource" destination="j33-nH-e7j" id="Ff9-a4-JzT"/>
+                                <outlet property="delegate" destination="j33-nH-e7j" id="boS-yF-Va7"/>
                             </connections>
                         </tableView>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.81176470590000005" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" constant="5" id="2hl-Fd-Om2"/>
+                        <constraint firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="2hl-Fd-Om2"/>
                         <constraint firstItem="i5M-Pr-FkT" firstAttribute="top" secondItem="DTq-nj-bnw" secondAttribute="top" constant="5" id="2rO-eX-OMr"/>
-                        <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="DTq-nj-bnw" secondAttribute="leading" constant="5" id="OAA-Pf-u9C"/>
+                        <constraint firstItem="i5M-Pr-FkT" firstAttribute="leading" secondItem="DTq-nj-bnw" secondAttribute="leading" id="OAA-Pf-u9C"/>
                         <constraint firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="5" id="RCo-Me-sFs"/>
                     </constraints>
                 </view>
@@ -68,6 +69,6 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
-        <customObject id="biQ-c3-9LN" customClass="TableCustomCotroller" customModule="Custom_table_view" customModuleProvider="target"/>
+        <customObject id="j33-nH-e7j" customClass="TableCustomCotroller" customModule="Custom_table_view" customModuleProvider="target"/>
     </objects>
 </document>

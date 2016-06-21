@@ -33,7 +33,7 @@ class TableCustomView: UITableView {
     
     func xibSetup() {
         
-        self.registerClass(TableSectionCell.self, forCellReuseIdentifier: "TableSectionCell")
+        //self.registerClass(TableSectionCell.self, forCellReuseIdentifier: "TableSectionCell")
         
     }
     
