@@ -22,8 +22,8 @@ class TableCustomCotroller: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let cellNib = UINib(nibName: "View.TableSectionCell", bundle: nil)
-        tableView.registerNib(cellNib, forCellReuseIdentifier: "TableSectionCell")
+//        let cellNib = UINib(nibName: "View.TableSectionCell", bundle: nil)
+//        tableView.registerNib(cellNib, forCellReuseIdentifier: "TableSectionCell")
         
     }
 
@@ -46,12 +46,19 @@ class TableCustomCotroller: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("TableSectionCell", forIndexPath: indexPath) as! TableSectionCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("TableSectionCell", forIndexPath: indexPath) as? TableSectionCell
 
+//        if (cell == nil) {
+//            // Load the nib and assign an owner
+//            let topLevelObjects = NSBundle.mainBundle().loadNibNamed("View.TableSectionCell", owner: self, options: nil);
+//            cell = topLevelObjects.first as? TableSectionCell
+//        }
+
+        
         // Configure the cell...
         //cell.cellLabel.text = items[indexPath.row]
        
-        return cell
+        return cell!
     }
     
 
@@ -59,7 +66,7 @@ class TableCustomCotroller: UITableViewController {
         
         let cell = cell as! TableSectionCell
         cell.contentView.backgroundColor = UIColor(hex: "#FFCF7F",alpha: 0.8)
-        cell.cellLabel.textColor = UIColor.darkTextColor()
+//        cell.cellLabel.textColor = UIColor.darkTextColor()
         cell.alpha = 0.5
     }
     

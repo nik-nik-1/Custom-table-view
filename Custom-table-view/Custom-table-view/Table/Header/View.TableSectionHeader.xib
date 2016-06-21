@@ -8,17 +8,17 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableSectionHeader" customModule="Custom_table_view" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="1000" height="120"/>
+            <rect key="frame" x="0.0" y="0.0" width="1000" height="70"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXj-KF-sAo">
-                    <rect key="frame" x="0.0" y="0.0" width="1000" height="120"/>
+                    <rect key="frame" x="0.0" y="0.0" width="1000" height="70"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E8c-xr-aS5" userLabel="CellСolumn0">
-                            <rect key="frame" x="0.0" y="0.0" width="400" height="120"/>
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="70"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header0" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfu-Vw-buM" userLabel="Сolumn0">
-                                    <rect key="frame" x="5" y="5" width="390" height="110"/>
+                                    <rect key="frame" x="5" y="5" width="240" height="60"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -41,13 +41,13 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yp8-fH-ROs" userLabel="Stack View 2">
-                            <rect key="frame" x="400" y="0.0" width="600" height="120"/>
+                            <rect key="frame" x="250" y="0.0" width="750" height="70"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vKj-QS-suL" userLabel="CellCap">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="750" height="35"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HeaderCap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6pG-Fl-VdL" userLabel="СolumnCap">
-                                            <rect key="frame" x="5" y="17" width="590" height="26"/>
+                                            <rect key="frame" x="5" y="5" width="740" height="26"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -69,13 +69,13 @@
                                     </userDefinedRuntimeAttributes>
                                 </view>
                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="kTH-QS-B8t">
-                                    <rect key="frame" x="0.0" y="60" width="600" height="60"/>
+                                    <rect key="frame" x="0.0" y="35" width="750" height="35"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yb-Ha-rjX" userLabel="CellСolumn1">
-                                            <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="35"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WV7-FQ-c9h" userLabel="Сolumn1">
-                                                    <rect key="frame" x="5" y="17" width="190" height="26"/>
+                                                    <rect key="frame" x="5" y="5" width="240" height="26"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -97,10 +97,10 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tt3-iE-bmd" userLabel="CellСolumn2">
-                                            <rect key="frame" x="200" y="0.0" width="200" height="60"/>
+                                            <rect key="frame" x="250" y="0.0" width="250" height="35"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header2" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7N-EE-7j1" userLabel="Сolumn2">
-                                                    <rect key="frame" x="5" y="17" width="190" height="26"/>
+                                                    <rect key="frame" x="5" y="5" width="240" height="26"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -122,10 +122,10 @@
                                             </userDefinedRuntimeAttributes>
                                         </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OUQ-rG-HwR" userLabel="CellСolumn3">
-                                            <rect key="frame" x="400" y="0.0" width="200" height="60"/>
+                                            <rect key="frame" x="500" y="0.0" width="250" height="35"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header3" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dy-aC-b0b" userLabel="Сolumn3">
-                                                    <rect key="frame" x="5" y="17" width="190" height="26"/>
+                                                    <rect key="frame" x="5" y="5" width="240" height="26"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -152,7 +152,7 @@
                         </stackView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="yp8-fH-ROs" firstAttribute="leading" secondItem="LXj-KF-sAo" secondAttribute="leading" constant="400" id="aId-Py-oaN"/>
+                        <constraint firstItem="yp8-fH-ROs" firstAttribute="leading" secondItem="LXj-KF-sAo" secondAttribute="leading" constant="250" id="aId-Py-oaN"/>
                     </constraints>
                 </stackView>
             </subviews>

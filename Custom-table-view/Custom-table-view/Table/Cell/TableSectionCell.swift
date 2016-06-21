@@ -11,48 +11,48 @@ import UIKit
 @IBDesignable
 class TableSectionCell: UITableViewCell {
 
-    @IBOutlet weak var cellLabel: UILabel!
-    
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        layoutSubviews()
-        
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-//        // 1. setup any properties here
+//    //@IBOutlet weak var cellLabel: UILabel!
+//    
+//    
+//    override func awakeFromNib() {
+//        super.awakeFromNib()
+//        // Initialization code
+//    }
+//
+//    override func setSelected(selected: Bool, animated: Bool) {
+//        super.setSelected(selected, animated: animated)
+//
+//        // Configure the view for the selected state
+//    }
+//    
+//    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+//        super.init(style: style, reuseIdentifier: reuseIdentifier)
 //        
-//        // 2. call super.init(coder:)
-        super.init(coder: aDecoder)
+//        layoutSubviews()
 //        
-//        // 3. Setup view from .xib file
-        
-        layoutSubviews()
-    }
-    
-    override func layoutSubviews() {
-       
-        super.layoutSubviews()
-        
-//        contentView.backgroundColor = UIColor(hex: "#FFCF7F",alpha: 0.8)
-//        if cellLabel != nil {
-//            cellLabel?.textColor = UIColor.darkGrayColor()
-//        }
-//        alpha = 0.5
-    }
+//    }
+//    
+//    required init?(coder aDecoder: NSCoder) {
+////        // 1. setup any properties here
+////        
+////        // 2. call super.init(coder:)
+//        super.init(coder: aDecoder)
+////        
+////        // 3. Setup view from .xib file
+//        
+//        layoutSubviews()
+//    }
+//    
+//    override func layoutSubviews() {
+//       
+//        super.layoutSubviews()
+//        
+////        contentView.backgroundColor = UIColor(hex: "#FFCF7F",alpha: 0.8)
+////        if cellLabel != nil {
+////            cellLabel?.textColor = UIColor.darkGrayColor()
+////        }
+////        alpha = 0.5
+//    }
     
     
 }

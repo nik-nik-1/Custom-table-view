@@ -10,7 +10,7 @@ import Foundation
 
 class DataModel {
     
-    let items = ["Item 1", "Item2", "Item3", "Item4"]
+    let items = ["Item 1", "Item2", "Item3", "Item4", "Item5"]
     
     init (){
         

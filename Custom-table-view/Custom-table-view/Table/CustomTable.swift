@@ -13,27 +13,72 @@ import UIKit
 @IBDesignable
 class CustomTable: UIView {
 
-    @IBOutlet private var contentView:UIView?
+ //   @IBOutlet private var contentView:UIView?
     // other outlets
     
-    override init(frame: CGRect) { // for using CustomView in code
+//    override init(frame: CGRect) { // for using CustomView in code
+//        super.init(frame: frame)
+//        self.commonInit()
+//    }
+//    
+//    required init?(coder aDecoder: NSCoder) { // for using CustomView in IB
+//        super.init(coder: aDecoder)
+//        self.commonInit()
+//    }
+//    
+//    private func commonInit() {
+//        NSBundle.mainBundle().loadNibNamed("View.CustomTable", owner: self, options: nil)
+//        guard let content = contentView else { return }
+//        content.frame = self.bounds
+//        content.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
+//        self.addSubview(content)
+//    }
+    
+   // Our custom view from the XIB file
+    var view: UIView!
+    
+    override init(frame: CGRect) {
+        // 1. setup any properties here
+        
+        // 2. call super.init(frame:)
         super.init(frame: frame)
-        self.commonInit()
+        
+        // 3. Setup view from .xib file
+        xibSetup()
     }
     
-    required init?(coder aDecoder: NSCoder) { // for using CustomView in IB
+    required init?(coder aDecoder: NSCoder) {
+        // 1. setup any properties here
+        
+        // 2. call super.init(coder:)
         super.init(coder: aDecoder)
-        self.commonInit()
+        
+        // 3. Setup view from .xib file
+        xibSetup()
     }
     
-    private func commonInit() {
-        NSBundle.mainBundle().loadNibNamed("View.CustomTable", owner: self, options: nil)
-        guard let content = contentView else { return }
-        content.frame = self.bounds
-        content.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
-        self.addSubview(content)
+    func xibSetup() {
+        view = loadViewFromNib()
+        
+        // use bounds not frame or it'll be offset
+        view.frame = bounds
+        
+        // Make the view stretch with containing view
+        view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
+        
+        // Adding custom subview on top of our view (over any custom drawing > see note below)
+        addSubview(view)
     }
     
+    func loadViewFromNib() -> UIView {
+        let bundle = NSBundle(forClass: self.dynamicType)
+        let nib = UINib(nibName: "View.CustomTable", bundle: bundle)
+        
+        // Assumes UIView is top level and only object in CustomView.xib file
+        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
+        return view
+    }
+
     
     
 }
