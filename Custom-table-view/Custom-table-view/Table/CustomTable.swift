@@ -13,6 +13,10 @@ import UIKit
 @IBDesignable
 class CustomTable: UIView {
 
+    @IBOutlet weak var headerOfTable: TableSectionHeader!
+    @IBOutlet weak var footerOfTable: TableSectionFooter!
+    @IBOutlet weak var sectionOfCellinTable: TableCustomView!
+    
  //   @IBOutlet private var contentView:UIView?
     // other outlets
     

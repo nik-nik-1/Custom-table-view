@@ -13,7 +13,14 @@ class TableSectionHeader: UIView {//UITableViewHeaderFooterView
 //{
     
     // Outlets
-    @IBOutlet weak var label1: UILabel!
+    
+    @IBOutlet weak var column0: UILabel!
+    @IBOutlet weak var columnCap: UILabel!
+    @IBOutlet weak var column1: UILabel!
+    @IBOutlet weak var column2: UILabel!
+    @IBOutlet weak var column3: UILabel!
+    
+    
     //@IBOutlet weak var conView: UIView!
     
     // Our custom view from the XIB file

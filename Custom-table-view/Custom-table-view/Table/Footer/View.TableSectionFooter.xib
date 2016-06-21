@@ -5,7 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableSectionFooter" customModule="Custom_table_view" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableSectionFooter" customModule="Custom_table_view" customModuleProvider="target">
+            <connections>
+                <outlet property="column0" destination="8hx-l1-dkD" id="5rZ-92-9Jh"/>
+                <outlet property="column1" destination="Nx1-9C-MGg" id="fpb-BY-JNN"/>
+                <outlet property="column2" destination="HBF-zJ-9oU" id="5NF-hu-ZYB"/>
+                <outlet property="column3" destination="6F6-3e-bn1" id="P27-EA-QTz"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="1000" height="35"/>

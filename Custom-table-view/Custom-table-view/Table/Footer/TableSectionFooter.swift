@@ -13,6 +13,11 @@ class TableSectionFooter: UIView {
     
     //@IBOutlet weak var footerLabel: UILabel!
     
+    @IBOutlet weak var column0: UILabel!
+    @IBOutlet weak var column1: UILabel!
+    @IBOutlet weak var column2: UILabel!
+    @IBOutlet weak var column3: UILabel!
+    
     // Our custom view from the XIB file
     var view: UIView!
     

@@ -134,6 +134,12 @@
                     <constraint firstItem="1ZQ-yw-vRg" firstAttribute="top" secondItem="Qak-JE-P2Q" secondAttribute="topMargin" constant="-8" id="z58-CZ-lV2"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="column0" destination="yz5-bO-pJT" id="xOm-m5-5Cj"/>
+                <outlet property="column1" destination="flv-vq-Pvj" id="Lr4-Dd-eWm"/>
+                <outlet property="column2" destination="Tfd-aK-FqW" id="Qc0-p8-00z"/>
+                <outlet property="column3" destination="69D-Ex-088" id="ORw-Nb-9Zh"/>
+            </connections>
             <point key="canvasLocation" x="80.5" y="422"/>
         </tableViewCell>
     </objects>
