@@ -17,27 +17,7 @@ class CustomTable: UIView {
     @IBOutlet weak var footerOfTable: TableSectionFooter!
     @IBOutlet weak var sectionOfCellinTable: TableCustomView!
     
- //   @IBOutlet private var contentView:UIView?
-    // other outlets
-    
-//    override init(frame: CGRect) { // for using CustomView in code
-//        super.init(frame: frame)
-//        self.commonInit()
-//    }
-//    
-//    required init?(coder aDecoder: NSCoder) { // for using CustomView in IB
-//        super.init(coder: aDecoder)
-//        self.commonInit()
-//    }
-//    
-//    private func commonInit() {
-//        NSBundle.mainBundle().loadNibNamed("View.CustomTable", owner: self, options: nil)
-//        guard let content = contentView else { return }
-//        content.frame = self.bounds
-//        content.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
-//        self.addSubview(content)
-//    }
-    
+
    // Our custom view from the XIB file
     var view: UIView!
     
@@ -76,7 +56,6 @@ class CustomTable: UIView {
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(view)
         
-        customTableViewController.viewDidLoad()
     }
     
     func loadViewFromNib() -> UIView {

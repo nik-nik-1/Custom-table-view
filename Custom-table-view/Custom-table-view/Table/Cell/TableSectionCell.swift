@@ -36,7 +36,6 @@ class TableSectionCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         layoutSubviews()
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

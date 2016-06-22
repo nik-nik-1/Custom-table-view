@@ -46,18 +46,19 @@ class TableCustomCotroller: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-//        var cell = tableView.dequeueReusableCellWithIdentifier("TableSectionCell", forIndexPath: indexPath) as? TableSectionCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("TableSectionCell", forIndexPath: indexPath) as? TableSectionCell
 
         
 //        if (cell == nil) {
-//            // Load the nib and assign an owner
-//            let topLevelObjects = NSBundle.mainBundle().loadNibNamed("View.TableSectionCell", owner: self, options: nil);
-//            cell = topLevelObjects.first as? TableSectionCell
-       let  cell = NSBundle.mainBundle().loadNibNamed("View.TableSectionCell", owner: nil, options: nil)[0] as? TableSectionCell
+//////            // Load the nib and assign an owner
+//////            let topLevelObjects = NSBundle.mainBundle().loadNibNamed("View.TableSectionCell", owner: self, options: nil);
+    //    OR : !!!!!
+//////            cell = topLevelObjects.first as? TableSectionCell
+//            cell = NSBundle.mainBundle().loadNibNamed("View.TableSectionCell", owner: nil, options: nil)[0] as? TableSectionCell
 //        }
 
         if cell != nil {
-            cell?.column0?.text = "123"
+            cell!.column0?.text = "123"
         }
         
 
