@@ -28,6 +28,7 @@
 		E7D001BC1D17F62900A26114 /* TableCustom.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D001BA1D17F62900A26114 /* TableCustom.xib */; };
 		E7D001C51D1804E300A26114 /* CustomTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001C41D1804E200A26114 /* CustomTable.swift */; };
 		E7D001C71D1819AC00A26114 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001C61D1819AC00A26114 /* MainViewController.swift */; };
+		E7FF31E91D1AEADC00986CDE /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FF31E81D1AEADC00986CDE /* CellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		E7D001C21D17F72B00A26114 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		E7D001C41D1804E200A26114 /* CustomTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTable.swift; sourceTree = "<group>"; };
 		E7D001C61D1819AC00A26114 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E7FF31E81D1AEADC00986CDE /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				E7D001991D1423A400A26114 /* TableSectionCell.swift */,
 				E7D0019A1D1423A400A26114 /* View.TableSectionCell.xib */,
+				E7FF31E81D1AEADC00986CDE /* CellView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				E7D001B11D1588BC00A26114 /* TableCustomCotroller.swift in Sources */,
 				E7D001B71D17F4FE00A26114 /* DataModel.swift in Sources */,
 				E7D001941D14004000A26114 /* String.swift in Sources */,
+				E7FF31E91D1AEADC00986CDE /* CellView.swift in Sources */,
 				E7D001B41D15892B00A26114 /* TableCustomView.swift in Sources */,
 				E7D001BB1D17F62900A26114 /* TableCustom.swift in Sources */,
 				E7D001A21D1423A400A26114 /* TableSectionCell.swift in Sources */,
