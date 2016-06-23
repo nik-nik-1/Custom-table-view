@@ -12,6 +12,8 @@ import UIKit
 class TableSectionHeader: UIView {//UITableViewHeaderFooterView
 //{
     
+    let dataModel = DataModel()
+    
     // Outlets
     
     @IBOutlet weak var column0: UILabel!
@@ -34,6 +36,7 @@ class TableSectionHeader: UIView {//UITableViewHeaderFooterView
         
         // 3. Setup view from .xib file
         xibSetup()
+        setDataLabel()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -44,6 +47,7 @@ class TableSectionHeader: UIView {//UITableViewHeaderFooterView
         
         // 3. Setup view from .xib file
         xibSetup()
+        setDataLabel()
     }
     
     func xibSetup() {
@@ -68,6 +72,15 @@ class TableSectionHeader: UIView {//UITableViewHeaderFooterView
         return view
     }
     
+    func setDataLabel() {
+        let headerC = dataModel.headerCaption
+        
+        columnCap.text = headerC["Cap"]
+        column0.text = headerC["0"]
+        column1.text = headerC["1"]
+        column2.text = headerC["2"]
+        column3.text = headerC["3"]
+    }
     
     
     

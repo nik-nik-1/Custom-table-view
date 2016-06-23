@@ -11,7 +11,8 @@ import UIKit
 @IBDesignable
 class TableSectionFooter: UIView {
     
-    //@IBOutlet weak var footerLabel: UILabel!
+    
+    let dataModel = DataModel()
     
     @IBOutlet weak var column0: UILabel!
     @IBOutlet weak var column1: UILabel!
@@ -29,6 +30,7 @@ class TableSectionFooter: UIView {
         
         // 3. Setup view from .xib file
         xibSetup()
+        setDataLabel()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -39,6 +41,7 @@ class TableSectionFooter: UIView {
         
         // 3. Setup view from .xib file
         xibSetup()
+        setDataLabel()
     }
     
     func xibSetup() {
@@ -62,6 +65,18 @@ class TableSectionFooter: UIView {
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         return view
     }
+    
+    func setDataLabel() {
+        
+        dataModel.calculateFootersValue (-1) // each row need to calculate
+        let footerC = dataModel.footerCaption
+        
+        column0.text = footerC["0"]
+        column1.text = footerC["1"]
+        column2.text = footerC["2"]
+        column3.text = footerC["3"]
+    }
+
 }
 
 

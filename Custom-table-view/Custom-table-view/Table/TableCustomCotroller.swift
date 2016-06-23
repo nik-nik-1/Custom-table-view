@@ -57,15 +57,16 @@ class TableCustomCotroller: UITableViewController {
 //            cell = NSBundle.mainBundle().loadNibNamed("View.TableSectionCell", owner: nil, options: nil)[0] as? TableSectionCell
 //        }
 
+        // Configure the cell..
+        let massOfData = dataModel.items[indexPath.row]
+        
         if cell != nil {
-            cell!.column0?.text = "123"
+            cell!.column0?.text = massOfData[0] as? String
+            cell!.column1?.text = (massOfData[1] as? Float)?.description
+            cell!.column2?.text = (massOfData[2] as? Float)?.description
+            cell!.column3?.text = (massOfData[3] as? Float)?.description
         }
         
-
-        
-        // Configure the cell...
-//        cell.cellLabel.text = items[indexPath.row]
-       
         return cell!
     }
     
