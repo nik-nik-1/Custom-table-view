@@ -22,7 +22,7 @@ class TableCustomCotroller: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-//        let cellNib = UINib(nibName: "View.TableSectionCell", bundle: nil)
+//        let cellNib = UINib(nibName: "TableSectionCell", bundle: nil)
 //        tableView.registerNib(cellNib, forCellReuseIdentifier: "TableSectionCell")
         
     }
@@ -51,10 +51,10 @@ class TableCustomCotroller: UITableViewController {
         
 //        if (cell == nil) {
 //////            // Load the nib and assign an owner
-//////            let topLevelObjects = NSBundle.mainBundle().loadNibNamed("View.TableSectionCell", owner: self, options: nil);
+//////            let topLevelObjects = NSBundle.mainBundle().loadNibNamed("TableSectionCell", owner: self, options: nil);
     //    OR : !!!!!
 //////            cell = topLevelObjects.first as? TableSectionCell
-//            cell = NSBundle.mainBundle().loadNibNamed("View.TableSectionCell", owner: nil, options: nil)[0] as? TableSectionCell
+//            cell = NSBundle.mainBundle().loadNibNamed("TableSectionCell", owner: nil, options: nil)[0] as? TableSectionCell
 //        }
 
         // Configure the cell..

@@ -8,7 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="36" id="7x5-Z4-qE6" customClass="TableSectionCell" customModule="Custom_table_view" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableSectionCell" rowHeight="36" id="7x5-Z4-qE6" customClass="TableSectionCell" customModule="Custom_table_view" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="1000" height="36"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7x5-Z4-qE6" id="Qak-JE-P2Q">

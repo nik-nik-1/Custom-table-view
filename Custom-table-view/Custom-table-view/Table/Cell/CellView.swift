@@ -50,7 +50,7 @@ class CellView: UIView {
     
     func loadViewFromNib() -> UIView {
         let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "View.TableSectionCell", bundle: bundle)
+        let nib = UINib(nibName: "TableSectionCell", bundle: bundle)
         
         // Assumes UIView is top level and only object in CustomView.xib file
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView

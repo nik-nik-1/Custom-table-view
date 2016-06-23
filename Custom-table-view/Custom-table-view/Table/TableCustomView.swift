@@ -34,7 +34,7 @@ class TableCustomView: UITableView {
     func xibSetup() {
         
        // self.registerClass(TableSectionCell.self, forCellReuseIdentifier: "TableSectionCell")
-        self.registerNib(UINib(nibName: "View.TableSectionCell", bundle: nil), forCellReuseIdentifier: "TableSectionCell")
+        self.registerNib(UINib(nibName: "TableSectionCell", bundle: nil), forCellReuseIdentifier: "TableSectionCell")
     }
     
    

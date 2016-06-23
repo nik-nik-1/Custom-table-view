@@ -25,7 +25,7 @@
 //        let headerNib = UINib(nibName: "View.TableSectionHeader", bundle: nil)
 //        tableView.registerNib(headerNib, forHeaderFooterViewReuseIdentifier: "TableSectionHeader")
 //        
-//        let cellNib = UINib(nibName: "View.TableSectionCell", bundle: nil)
+//        let cellNib = UINib(nibName: "TableSectionCell", bundle: nil)
 //        tableView.registerNib(cellNib, forCellReuseIdentifier: "TableSectionCell")
 //        
 //        let foorerNib = UINib(nibName: "View.TableSectionFooter", bundle: nil)
