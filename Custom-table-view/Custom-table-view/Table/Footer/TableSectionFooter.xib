@@ -37,11 +37,6 @@
                                 <constraint firstAttribute="trailing" secondItem="8hx-l1-dkD" secondAttribute="trailing" constant="5" id="cTM-xq-BF8"/>
                                 <constraint firstItem="8hx-l1-dkD" firstAttribute="centerY" secondItem="8Gd-cY-6Al" secondAttribute="centerY" id="hRz-fD-KA8"/>
                             </constraints>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                    <real key="value" value="1"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5Qp-gU-OhG" userLabel="Stack View 2">
                             <rect key="frame" x="250" y="0.0" width="750" height="35"/>
@@ -62,14 +57,6 @@
                                         <constraint firstAttribute="trailing" secondItem="Nx1-9C-MGg" secondAttribute="trailing" constant="5" id="93x-gi-Dox"/>
                                         <constraint firstItem="Nx1-9C-MGg" firstAttribute="centerY" secondItem="fnn-5H-i6P" secondAttribute="centerY" id="Q5V-Oh-ZBT"/>
                                     </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <real key="value" value="1"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hBP-8f-rGf" userLabel="CellСolumn2">
                                     <rect key="frame" x="250" y="0.0" width="250" height="35"/>
@@ -87,14 +74,6 @@
                                         <constraint firstAttribute="trailing" secondItem="HBF-zJ-9oU" secondAttribute="trailing" constant="5" id="IhQ-1R-YdZ"/>
                                         <constraint firstItem="HBF-zJ-9oU" firstAttribute="leading" secondItem="hBP-8f-rGf" secondAttribute="leading" constant="5" id="sZ6-i8-qnd"/>
                                     </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <real key="value" value="1"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ubd-93-wwp" userLabel="CellСolumn3">
                                     <rect key="frame" x="500" y="0.0" width="250" height="35"/>
@@ -112,14 +91,6 @@
                                         <constraint firstItem="6F6-3e-bn1" firstAttribute="centerY" secondItem="Ubd-93-wwp" secondAttribute="centerY" id="TjL-RB-bS2"/>
                                         <constraint firstItem="6F6-3e-bn1" firstAttribute="leading" secondItem="Ubd-93-wwp" secondAttribute="leading" constant="5" id="cZU-vZ-Szn"/>
                                     </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                            <real key="value" value="1"/>
-                                        </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                            <color key="value" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        </userDefinedRuntimeAttribute>
-                                    </userDefinedRuntimeAttributes>
                                 </view>
                             </subviews>
                         </stackView>
