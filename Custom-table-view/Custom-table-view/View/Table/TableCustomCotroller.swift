@@ -164,7 +164,16 @@ class TableCustomCotroller: UITableViewController{
     }
     
     func getNameOfTableSectionInstanse () -> String {
-        return tableViewModel!.getNameOfTableSectionInstanse()
+        
+        var valueToReturn: String = ""
+        
+        if tableViewModel == nil {
+            valueToReturn = TableViewModel.getNameOfTableSectionInstanse()
+        } else {
+            valueToReturn = tableViewModel!.nameOfTableSectionInstanse!
+        }
+        
+        return valueToReturn
     }
     
     func getParamCanEditDataInCell () -> Bool {

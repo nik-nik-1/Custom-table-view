@@ -34,9 +34,16 @@ class CustomTable: UIView {
     
     //var instanceOfController: CustonTableViewRedirect
     
-    var CanEditDataInCell: Bool {
-        get {return customTableViewController.getParamCanEditDataInCell()}
-        set {customTableViewController.setNameOfTableSectionInstanse(CanEditDataInCell)}
+    
+    
+    var canEditDataInCell: Bool {
+        get {
+            return customTableViewController.getParamCanEditDataInCell()
+        }
+        
+        set {
+            customTableViewController.setNameOfTableSectionInstanse(newValue)
+        }
     }
     
    // Our custom view from the XIB file

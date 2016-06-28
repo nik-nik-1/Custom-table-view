@@ -16,10 +16,15 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
        
-        table1.tableViewModel = TableViewModel()
+        let tableViewModel1 = TableViewModel()
+        tableViewModel1.setNameOfTableSectionInstanse(true)
+        table1.tableViewModel = tableViewModel1
+        //table1.canEditDataInCell = true
         table1.uptadeDataInTableFromViewModel()
 
-        table2.tableViewModel = TableViewModel()
+        let tableViewModel2 = TableViewModel()
+        tableViewModel2.setNameOfTableSectionInstanse(false)
+        table2.tableViewModel = tableViewModel2
         table2.uptadeDataInTableFromViewModel()
     }
     

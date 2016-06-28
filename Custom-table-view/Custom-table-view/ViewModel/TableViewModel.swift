@@ -20,10 +20,10 @@ class TableViewModel {
     //MARK: func. of module
     func setNameOfTableSectionInstanse(inputParam:Bool) {
         
-        nameOfTableSectionInstanse = getNameOfTableSectionInstanse(inputParam)
+        nameOfTableSectionInstanse = TableViewModel.getNameOfTableSectionInstanse(inputParam)
     }
     
-    func getNameOfTableSectionInstanse(inputParam:Bool? = nil) -> String {
+    static func getNameOfTableSectionInstanse(inputParam:Bool? = nil) -> String {
         
         var param = inputParam
         
