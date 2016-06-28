@@ -1,5 +1,5 @@
 //
-//  TableSectionHeader.swift
+//  TableSectionFooter.swift
 //  Custom-table-view
 //
 //  Created by mc373 on 16.06.16.
@@ -9,21 +9,14 @@
 import UIKit
 
 @IBDesignable
-class TableSectionHeader: UIView {//UITableViewHeaderFooterView
-//{
+class TableSectionFooter: UIView {
     
-    let dataModel = DataModel()
-    
-    // Outlets
+    lazy var tableViewModel: TableViewModel? = nil
     
     @IBOutlet weak var column0: UILabel!
-    @IBOutlet weak var columnCap: UILabel!
     @IBOutlet weak var column1: UILabel!
     @IBOutlet weak var column2: UILabel!
     @IBOutlet weak var column3: UILabel!
-    
-    
-    //@IBOutlet weak var conView: UIView!
     
     // Our custom view from the XIB file
     var view: UIView!
@@ -36,7 +29,7 @@ class TableSectionHeader: UIView {//UITableViewHeaderFooterView
         
         // 3. Setup view from .xib file
         xibSetup()
-        setDataLabel()
+//        setDataLabel()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -47,10 +40,11 @@ class TableSectionHeader: UIView {//UITableViewHeaderFooterView
         
         // 3. Setup view from .xib file
         xibSetup()
-        setDataLabel()
+//        setDataLabel()
     }
     
     func xibSetup() {
+        
         view = loadViewFromNib()
         
         // use bounds not frame or it'll be offset
@@ -64,8 +58,9 @@ class TableSectionHeader: UIView {//UITableViewHeaderFooterView
     }
     
     func loadViewFromNib() -> UIView {
+        
         let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "TableSectionHeader", bundle: bundle)
+        let nib = UINib(nibName: "TableSectionFooter", bundle: bundle)
         
         // Assumes UIView is top level and only object in CustomView.xib file
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
@@ -73,17 +68,26 @@ class TableSectionHeader: UIView {//UITableViewHeaderFooterView
     }
     
     func setDataLabel() {
-        let headerC = dataModel.headerCaption
         
-        columnCap.text = headerC["Cap"]
-        column0.text = headerC["0"]
-        column1.text = headerC["1"]
-        column2.text = headerC["2"]
-        column3.text = headerC["3"]
+        if let dataModel = tableViewModel?.dataModel {
+            dataModel.calculateFootersValue (-1) // each row need to calculate
+            let footerC = dataModel.footerCaption
+            
+            column0.text = footerC["0"]
+            column1.text = footerC["1"]
+            column2.text = footerC["2"]
+            column3.text = footerC["3"]
+        }
     }
-    
-    
-    
+
+}
+
+
+//class TableSectionFooter: UITableViewHeaderFooterView {
+//    
+//    @IBOutlet weak var footerLabel: UILabel!
+//    @IBOutlet weak var conView: UIView!
+//    
 //    override func awakeFromNib() {
 //        super.awakeFromNib()
 //        // Initialization code
@@ -111,9 +115,9 @@ class TableSectionHeader: UIView {//UITableViewHeaderFooterView
 //        
 //        super.layoutSubviews()
 //        
-//        conView?.backgroundColor = UIColor(hex: "#FF9090",alpha: 0.8)
-//        headerLabel?.textColor = UIColor.blackColor()
-//        alpha = 0.5
+//        conView?.backgroundColor = UIColor(hex: "#89C4FF",alpha: 0.8)
+//        footerLabel?.textColor = UIColor.darkTextColor()
+//        alpha = 0.5//make the footer transparent
 //        
 //    }
 //    
@@ -124,4 +128,15 @@ class TableSectionHeader: UIView {//UITableViewHeaderFooterView
 //     // Drawing code
 //     }
 //     */
+//    
+//}
+
+//MARK: extension WorkWithData
+extension TableSectionFooter: WorkWithData {
+    
+    func uptadeDataInTableFromViewModel() {
+        setDataLabel()
+    }
+    
 }
+

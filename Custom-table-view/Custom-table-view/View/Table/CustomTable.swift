@@ -10,18 +10,39 @@
 
 import UIKit
 
+protocol WorkWithData {
+    
+    func uptadeDataInTableFromViewModel()
+    
+}
+
 @IBDesignable
 class CustomTable: UIView {
 
+    var tableViewModel: TableViewModel? = nil {
+        didSet {
+            customTableViewController.tableViewModel    = tableViewModel
+            headerOfTable.tableViewModel                = tableViewModel
+            footerOfTable.tableViewModel                = tableViewModel
+            sectionOfCellinTable.tableViewModel         = tableViewModel
+        }
+    }
+    
     @IBOutlet weak var headerOfTable: TableSectionHeader!
     @IBOutlet weak var footerOfTable: TableSectionFooter!
-    @IBOutlet weak var sectionOfCellinTable: TableCustomView!
+    @IBOutlet weak var sectionOfCellinTable: TableSectionsOfCells!
     
-
+    //var instanceOfController: CustonTableViewRedirect
+    
+    var CanEditDataInCell: Bool {
+        get {return customTableViewController.getParamCanEditDataInCell()}
+        set {customTableViewController.setNameOfTableSectionInstanse(CanEditDataInCell)}
+    }
+    
    // Our custom view from the XIB file
     var view: UIView!
     
-    @IBOutlet var customTableViewController: TableCustomCotroller!
+    @IBOutlet private var customTableViewController: TableCustomCotroller!
     
     override init(frame: CGRect) {
         // 1. setup any properties here
@@ -31,7 +52,7 @@ class CustomTable: UIView {
         
         // 3. Setup view from .xib file
         xibSetup()
-        
+        //setupViewModel()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -42,9 +63,16 @@ class CustomTable: UIView {
         
         // 3. Setup view from .xib file
         xibSetup()
+        //setupViewModel()
+    }
+    
+    func setupViewModel() {
+        
+//        tableViewModel!.nameOfTableSectionInstanse = tableViewModel!.getNameOfTableSectionInstanse(CanEditDataInCell)
     }
     
     func xibSetup() {
+        
         view = loadViewFromNib()
         
         // use bounds not frame or it'll be offset
@@ -55,18 +83,25 @@ class CustomTable: UIView {
         
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(view)
-        
+
+                
     }
     
     func loadViewFromNib() -> UIView {
+        
         let bundle = NSBundle(forClass: self.dynamicType)
-        let nib = UINib(nibName: "View.CustomTable", bundle: bundle)
+        let nib = UINib(nibName: "CustomTable", bundle: bundle)
         
         // Assumes UIView is top level and only object in CustomView.xib file
         let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
         return view
     }
 
-    
+    //MARK: func. for controll
+    func uptadeDataInTableFromViewModel() {
+        customTableViewController.uptadeDataInTableFromViewModel()
+        headerOfTable.uptadeDataInTableFromViewModel()
+        footerOfTable.uptadeDataInTableFromViewModel()
+    }
     
 }

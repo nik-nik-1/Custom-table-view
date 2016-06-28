@@ -9,7 +9,9 @@
 import UIKit
 
 @IBDesignable
-class TableCustomView: UITableView {
+class TableSectionsOfCells: UITableView {
+    
+    lazy var tableViewModel: TableViewModel? = nil
     
     override init(frame: CGRect, style: UITableViewStyle) {
         // 1. setup any properties here
@@ -32,9 +34,12 @@ class TableCustomView: UITableView {
     }
     
     func xibSetup() {
+
         
-       // self.registerClass(TableSectionCell.self, forCellReuseIdentifier: "TableSectionCell")
-        self.registerNib(UINib(nibName: "TableSectionCell", bundle: nil), forCellReuseIdentifier: "TableSectionCell")
+       // self.registerClass(TableSectionUnchangeableCell.self, forCellReuseIdentifier: "TableSectionUnchangeableCell")
+        self.registerNib(UINib(nibName: "TableSectionChangeableCell", bundle: nil), forCellReuseIdentifier: "TableSectionChangeableCell")
+        
+        self.registerNib(UINib(nibName: "TableSectionUnChangeableCell", bundle: nil), forCellReuseIdentifier: "TableSectionUnChangeableCell")
     }
     
    
@@ -47,3 +52,13 @@ class TableCustomView: UITableView {
     */
 
 }
+
+//MARK: extension WorkWithData
+extension TableSectionsOfCells: WorkWithData {
+    
+    func uptadeDataInTableFromViewModel() {
+        
+    }
+    
+}
+

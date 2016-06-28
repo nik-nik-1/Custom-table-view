@@ -1,5 +1,5 @@
 //
-//  TableSectionCell.swift
+//  TableSectionUnchangeableCell.swift
 //  Custom-table-view
 //
 //  Created by mc373 on 17.06.16.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class TableSectionCell: UITableViewCell {
+class TableSectionUnchangeableCell: UITableViewCell {
 
     
     @IBOutlet weak var column0: UILabel!
@@ -49,9 +49,11 @@ class TableSectionCell: UITableViewCell {
         layoutSubviews()
     }
     
+    
     override func layoutSubviews() {
        
         super.layoutSubviews()
+
         
 //        contentView.backgroundColor = UIColor(hex: "#FFCF7F",alpha: 0.8)
 //        if cellLabel != nil {

@@ -18,26 +18,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rfL-oj-jy6" customClass="CustomTable" customModule="Custom_table_view" customModuleProvider="target">
-                                <rect key="frame" x="58" y="43" width="484" height="345"/>
+                            <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="table1" translatesAutoresizingMaskIntoConstraints="NO" id="rfL-oj-jy6" userLabel="Custom Table (Changeable)" customClass="CustomTable" customModule="Custom_table_view" customModuleProvider="target">
+                                <rect key="frame" x="58" y="14" width="484" height="270"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.91372549020000005" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="345" id="7YZ-oD-Gq3"/>
+                                    <constraint firstAttribute="height" constant="300" id="7YZ-oD-Gq3"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="CanEditDataInCell" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="table2" translatesAutoresizingMaskIntoConstraints="NO" id="KFt-KM-e1U" userLabel="Custom Table (UnChangeable)" customClass="CustomTable" customModule="Custom_table_view" customModuleProvider="target">
+                                <rect key="frame" x="72" y="300" width="484" height="270"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="SdT-pE-NNS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="CanEditDataInCell" value="NO"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="rfL-oj-jy6" secondAttribute="trailing" constant="38" id="4oT-az-ZHg"/>
+                            <constraint firstItem="KFt-KM-e1U" firstAttribute="leading" secondItem="Coe-Ir-2XJ" secondAttribute="leadingMargin" constant="38" id="anj-33-Czx"/>
                             <constraint firstItem="rfL-oj-jy6" firstAttribute="leading" secondItem="Coe-Ir-2XJ" secondAttribute="leadingMargin" constant="38" id="ddg-cZ-22L"/>
+                            <constraint firstItem="KFt-KM-e1U" firstAttribute="top" secondItem="rfL-oj-jy6" secondAttribute="bottom" constant="46" id="fSB-ze-Wsi"/>
                             <constraint firstItem="rfL-oj-jy6" firstAttribute="top" secondItem="guV-Hb-nwP" secondAttribute="bottom" constant="23" id="gsJ-iC-ZA4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="KFt-KM-e1U" secondAttribute="trailing" constant="38" id="nGd-Nt-sIe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="d2f-xd-CL7"/>
+                    <connections>
+                        <outlet property="table1" destination="rfL-oj-jy6" id="Kse-Jb-a25"/>
+                        <outlet property="table2" destination="KFt-KM-e1U" id="oJh-vM-lk4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twK-LI-wXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="421"/>
+            <point key="canvasLocation" x="1910" y="421"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vzy-ot-cgV">
@@ -55,7 +75,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLq-DB-sdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1024" y="421"/>
+            <point key="canvasLocation" x="1232" y="421"/>
         </scene>
     </scenes>
 </document>

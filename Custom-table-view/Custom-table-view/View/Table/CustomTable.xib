@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomTable" customModule="Custom_table_view" customModuleProvider="target">
             <connections>
-                <outlet property="customTableViewController" destination="j33-nH-e7j" id="7vo-AS-cIN"/>
+                <outlet property="customTableViewController" destination="Jr7-1P-0qc" id="GAK-QM-gCI"/>
                 <outlet property="footerOfTable" destination="wRr-VN-ho1" id="aUH-Jj-iQn"/>
                 <outlet property="headerOfTable" destination="GH3-QB-B3w" id="yDH-Ge-Yw6"/>
                 <outlet property="sectionOfCellinTable" destination="i5M-Pr-FkT" id="PiG-97-C8Z"/>
@@ -28,12 +28,12 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DTq-nj-bnw" userLabel="tableView">
                     <rect key="frame" x="0.0" y="72" width="1000" height="291"/>
                     <subviews>
-                        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT" customClass="TableCustomView" customModule="Custom_table_view" customModuleProvider="target">
+                        <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" tag="5" contentMode="scaleToFill" bouncesZoom="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="i5M-Pr-FkT" customClass="TableSectionsOfCells" customModule="Custom_table_view" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="5" width="1000" height="281"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <outlet property="dataSource" destination="j33-nH-e7j" id="kHL-HM-m2x"/>
-                                <outlet property="delegate" destination="j33-nH-e7j" id="eef-Wy-l54"/>
+                                <outlet property="dataSource" destination="Jr7-1P-0qc" id="XHr-gc-k7q"/>
+                                <outlet property="delegate" destination="Jr7-1P-0qc" id="OjC-9k-D86"/>
                             </connections>
                         </tableView>
                     </subviews>
@@ -69,6 +69,10 @@
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
-        <customObject id="j33-nH-e7j" customClass="TableCustomCotroller" customModule="Custom_table_view" customModuleProvider="target"/>
+        <customObject id="Jr7-1P-0qc" customClass="TableCustomCotroller" customModule="Custom_table_view" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="eV7-6q-nsx"/>
+            </connections>
+        </customObject>
     </objects>
 </document>
