@@ -39,7 +39,7 @@ class TableSectionsOfCells: UITableView {
        // self.registerClass(TableSectionUnchangeableCell.self, forCellReuseIdentifier: "TableSectionUnchangeableCell")
         self.registerNib(UINib(nibName: "TableSectionChangeableCell", bundle: nil), forCellReuseIdentifier: "TableSectionChangeableCell")
         
-        self.registerNib(UINib(nibName: "TableSectionUnChangeableCell", bundle: nil), forCellReuseIdentifier: "TableSectionUnChangeableCell")
+        self.registerNib(UINib(nibName: "TableSectionUnchangeableCell", bundle: nil), forCellReuseIdentifier: "TableSectionUnchangeableCell")
     }
     
    

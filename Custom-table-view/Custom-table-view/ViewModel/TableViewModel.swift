@@ -31,7 +31,7 @@ class TableViewModel {
             param = canEditDataInCellBydefault
         }
         
-        return param == true ? "TableSectionChangeableCell" : "TableSectionUnChangeableCell"
+        return param == true ? "TableSectionChangeableCell" : "TableSectionUnchangeableCell"
     }
     
 }

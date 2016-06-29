@@ -16,9 +16,9 @@ class TableCustomCotroller: UITableViewController{
         if tableViewModel != nil {
             return tableViewModel!.dataModel
         } else {
-           return nil
+            return nil
         }
-     }
+    }
     
     //    let name = (self.view as CustomTable).nameOfTableSectionInstanse
     
@@ -55,7 +55,7 @@ class TableCustomCotroller: UITableViewController{
         
         var numberOfRows: Int = 0
         if self.dataModel != nil {
-         numberOfRows = dataModel!.items.count
+            numberOfRows = dataModel!.items.count
         }
         
         return numberOfRows
@@ -66,14 +66,14 @@ class TableCustomCotroller: UITableViewController{
         
         let nameOfTableSectionInstanse = getNameOfTableSectionInstanse ()
         
-        var cell = tableView.dequeueReusableCellWithIdentifier(nameOfTableSectionInstanse, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(nameOfTableSectionInstanse, forIndexPath: indexPath)
         
         if nameOfTableSectionInstanse == "TableSectionChangeableCell" {
-            cell = cell as! TableSectionChangeableCell
-        } else if nameOfTableSectionInstanse == "TableSectionUnChangeableCell" {
-            cell = cell as! TableSectionUnchangeableCell
+            setDataInCell((cell as! TableSectionChangeableCell), index: indexPath)
+        } else if nameOfTableSectionInstanse == "TableSectionUnchangeableCell" {
+            setDataInCell((cell as! TableSectionUnchangeableCell), index: indexPath)
         } else {
-            return cell
+            //return cell
         }
         
         //        if (cell == nil) {
@@ -85,38 +85,53 @@ class TableCustomCotroller: UITableViewController{
         //        }
         
         // Configure the cell..
-       
-//        if self.dataModel != nil {
-//            let massOfData = dataModel!.items[indexPath.row]
-//            
-//            
-//            
-//            if cell is TableSectionChangeableCell || cell is TableSectionUnchangeableCell {
-//                cell.column0?.text = massOfData[0] as? String
-//                cell.column1?.text = (massOfData[1] as? Float)?.description
-//                cell!.column2?.text = (massOfData[2] as? Float)?.description
-//                cell!.column3?.text = (massOfData[3] as? Float)?.description
-//            }
-//        }
+        
+        
+        //        if self.dataModel != nil {
+        //            let massOfData = dataModel!.items[indexPath.row]
+        //
+        //
+        //
+        //            if cell is TableSectionChangeableCell || cell is TableSectionUnchangeableCell {
+        //                cell.column0?.text = massOfData[0] as? String
+        //                cell.column1?.text = (massOfData[1] as? Float)?.description
+        //                cell!.column2?.text = (massOfData[2] as? Float)?.description
+        //                cell!.column3?.text = (massOfData[3] as? Float)?.description
+        //            }
+        //        }
         
         
         return cell
     }
     
     
-//    func setDataInCell <T> (cell: T, indexPath: NSIndexPath) {
-//        if self.dataModel != nil {
-//            let massOfData = dataModel!.items[indexPath.row]
-//            
-////            if cell is TableSectionChangeableCell || cell is TableSectionUnchangeableCell {
-//                cell.column0.text = massOfData[0] as? String
-//                cell?.column1?.text = (massOfData[1] as? Float)?.description
-//                cell?.column2?.text = (massOfData[2] as? Float)?.description
-//                cell?.column3?.text = (massOfData[3] as? Float)?.description
-////            }
-//        }
-//
-//    }
+    func setDataInCell (cell: CellOfItem, index indexPath: NSIndexPath) {
+        //if self.dataModel != nil {
+        let massOfData = dataModel!.items[indexPath.row]
+        
+        cell.column0Data = massOfData[0] as! String
+        cell.column1Data = (massOfData[1] as! Float).description
+        cell.column2Data = (massOfData[2] as! Float).description
+        cell.column3Data = (massOfData[3] as! Float).description
+    }
+
+    
+    //    func setDataInCell <T> (cell: T, indexPath: NSIndexPath) {
+    //        if self.dataModel != nil {
+    //            let massOfData = dataModel!.items[indexPath.row]
+    //
+    ////            if cell is TableSectionChangeableCell || cell is TableSectionUnchangeableCell {
+    //                cell.column0.text = massOfData[0] as? String
+    //                cell?.column1?.text = (massOfData[1] as? Float)?.description
+    //                cell?.column2?.text = (massOfData[2] as? Float)?.description
+    //                cell?.column3?.text = (massOfData[3] as? Float)?.description
+    ////            }
+    //        }
+    //
+    //    }
+    
+    
+    
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         //
@@ -151,6 +166,9 @@ class TableCustomCotroller: UITableViewController{
                 if let tapCell = self.tableView.cellForRowAtIndexPath(tapIndexPath) {
                     // Tap happened. Do stuff!
                     
+                    let location = recognizer.locationInView(tapCell)
+                    let selectedView = tapCell.hitTest(location, withEvent: nil)
+                    print(selectedView?.tag)
                 }
             }
         }
@@ -183,7 +201,7 @@ class TableCustomCotroller: UITableViewController{
         if tableViewModel == nil {
             valueToReturn = TableViewModel.canEditDataInCellBydefault
         } else {
-           valueToReturn = tableViewModel!.canEditDataInCellBydefault
+            valueToReturn = tableViewModel!.canEditDataInCellBydefault
         }
         
         return valueToReturn
@@ -242,6 +260,8 @@ extension TableCustomCotroller: WorkWithData {
     func uptadeDataInTableFromViewModel() {
         self.tableView.reloadData()
     }
-    
 }
+
+
+
 
