@@ -68,13 +68,22 @@ class TableCustomCotroller: UITableViewController{
         
         let cell = tableView.dequeueReusableCellWithIdentifier(nameOfTableSectionInstanse, forIndexPath: indexPath)
         
-        if nameOfTableSectionInstanse == "TableSectionChangeableCell" {
-            setDataInCell((cell as! TableSectionChangeableCell), index: indexPath)
-        } else if nameOfTableSectionInstanse == "TableSectionUnchangeableCell" {
-            setDataInCell((cell as! TableSectionUnchangeableCell), index: indexPath)
-        } else {
-            //return cell
-        }
+        
+        
+        
+//        let adapter: CellInterface
+//        
+//        if nameOfTableSectionInstanse == "TableSectionChangeableCell" {
+//            adapter = ChangedCellAdapter()
+//            adapter.initColumns(item: dataModel!.items[indexPath.row], cell: cell)
+//        } else if nameOfTableSectionInstanse == "TableSectionUnchangeableCell" {
+//            adapter = UnchangedCellAdapter()
+//            adapter.initColumns(item: dataModel!.items[indexPath.row], cell: cell)
+//        } else {
+//            //return cell
+//        }
+        
+        
         
         //        if (cell == nil) {
         //////            // Load the nib and assign an owner
@@ -85,7 +94,7 @@ class TableCustomCotroller: UITableViewController{
         //        }
         
         // Configure the cell..
-        
+        CellsFactory.factoryOfType(cell).setDataInCell(items: dataModel!.items[indexPath.row])
         
         //        if self.dataModel != nil {
         //            let massOfData = dataModel!.items[indexPath.row]
@@ -104,16 +113,16 @@ class TableCustomCotroller: UITableViewController{
         return cell
     }
     
-    
-    func setDataInCell (cell: CellOfItem, index indexPath: NSIndexPath) {
-        //if self.dataModel != nil {
-        let massOfData = dataModel!.items[indexPath.row]
-        
-        cell.column0Data = massOfData[0] as! String
-        cell.column1Data = (massOfData[1] as! Float).description
-        cell.column2Data = (massOfData[2] as! Float).description
-        cell.column3Data = (massOfData[3] as! Float).description
-    }
+//    
+//    func setDataInCell (cell: CellOfItem, index indexPath: NSIndexPath) {
+//        //if self.dataModel != nil {
+//        let massOfData = dataModel!.items[indexPath.row]
+//        
+//        cell.column0Data = massOfData[0] as! String
+//        cell.column1Data = (massOfData[1] as! Float).description
+//        cell.column2Data = (massOfData[2] as! Float).description
+//        cell.column3Data = (massOfData[3] as! Float).description
+//    }
 
     
     //    func setDataInCell <T> (cell: T, indexPath: NSIndexPath) {
