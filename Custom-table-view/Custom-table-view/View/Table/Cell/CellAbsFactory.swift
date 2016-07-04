@@ -54,9 +54,7 @@ class CellsFactory {
     func setDataInCell (items massOfData: DataModel.ItemsInArray) {
         //by default - nothing to do
     }
-    
 }
-
 
 class ChangeableCellFactory: CellsFactory {
     
@@ -81,5 +79,4 @@ class UnchangeableCellFactory: CellsFactory {
     override func setDataInCell (items massOfData: DataModel.ItemsInArray) {
         cell?.setDataInCell(items: massOfData)
     }
-    
 }

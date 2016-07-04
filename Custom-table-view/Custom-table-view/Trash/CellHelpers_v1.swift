@@ -5,43 +5,10 @@
 //  Created by mc373 on 29.06.16.
 //  Copyright © 2016 mc373. All rights reserved.
 //
-
-import Foundation
-
-//protocol CellDifferentProtocol {
-//    
-//    func setDataInCell (items massOfData: DataModel.ItemsInArray)
-//    
-//}
 //
-//class CellAdapter: CellDifferentProtocol {
-//    
-//    private let tableSection: TableSectionUnchangeableCell?
-//    
-//    
-//    init(adaptee: TableSectionUnchangeableCell) {
-//        self.tableSection = adaptee
-//    }
-//    
-//    func setDataInCell (items massOfData: DataModel.ItemsInArray) {
-//        
-//       // adaptee. .... tam-pararam ...
-//    }
-//    
-//}
+//import Foundation
 //
-//extension TableSectionChangeableCell: CellDifferentProtocol {
-//    
-//    func setDataInCell (items massOfData: DataModel.ItemsInArray) {
-//        
-//        column0.text = massOfData[0] as? String
-//        column1.text = (massOfData[1] as! Float).description
-//        column2.text = (massOfData[2] as! Float).description
-//        column3.text = (massOfData[3] as! Float).description
 //
-//    }
-//}
-
 ////////////////
 //protocol CellOfItem: class {
 //    
@@ -70,5 +37,17 @@ import Foundation
 //    
 //}
 //
+//CALL:
+//
+//    func setDataInCell (cell: CellOfItem, index indexPath: NSIndexPath) {
+//        //if self.dataModel != nil {
+//        let massOfData = dataModel!.items[indexPath.row]
+//
+//        cell.column0Data = massOfData[0] as! String
+//        cell.column1Data = (massOfData[1] as! Float).description
+//        cell.column2Data = (massOfData[2] as! Float).description
+//        cell.column3Data = (massOfData[3] as! Float).description
+//    }
+
 /////////////
 

@@ -20,11 +20,11 @@
 		E798C36D1D216985004CD5C6 /* TableCustomCotroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C35F1D216985004CD5C6 /* TableCustomCotroller.swift */; };
 		E798C36E1D216985004CD5C6 /* TableSectionsOfCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3601D216985004CD5C6 /* TableSectionsOfCells.swift */; };
 		E798C3701D2169B4004CD5C6 /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C36F1D2169B4004CD5C6 /* TableViewModel.swift */; };
-		E798C3731D243FD0004CD5C6 /* CellHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3721D243FD0004CD5C6 /* CellHelpers.swift */; };
-		E798C3751D25B023004CD5C6 /* CellInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3741D25B023004CD5C6 /* CellInterface.swift */; };
-		E798C3771D25B127004CD5C6 /* ChangedCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3761D25B127004CD5C6 /* ChangedCellAdapter.swift */; };
-		E798C3791D25B2FD004CD5C6 /* UnchangedCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3781D25B2FD004CD5C6 /* UnchangedCellAdapter.swift */; };
 		E798C37B1D2A73BB004CD5C6 /* CellAbsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C37A1D2A73BB004CD5C6 /* CellAbsFactory.swift */; };
+		E798C3801D2A9B4B004CD5C6 /* CellHelpers_v1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C37C1D2A9B4B004CD5C6 /* CellHelpers_v1.swift */; };
+		E798C3811D2A9B4B004CD5C6 /* CellInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C37D1D2A9B4B004CD5C6 /* CellInterface.swift */; };
+		E798C3821D2A9B4B004CD5C6 /* ChangedCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C37E1D2A9B4B004CD5C6 /* ChangedCellAdapter.swift */; };
+		E798C3831D2A9B4B004CD5C6 /* UnchangedCellAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C37F1D2A9B4B004CD5C6 /* UnchangedCellAdapter.swift */; };
 		E7D0015F1D12D40A00A26114 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D0015E1D12D40A00A26114 /* AppDelegate.swift */; };
 		E7D001641D12D40A00A26114 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D001621D12D40A00A26114 /* Main.storyboard */; };
 		E7D001661D12D40A00A26114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D001651D12D40A00A26114 /* Assets.xcassets */; };
@@ -52,11 +52,11 @@
 		E798C35F1D216985004CD5C6 /* TableCustomCotroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCustomCotroller.swift; sourceTree = "<group>"; };
 		E798C3601D216985004CD5C6 /* TableSectionsOfCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionsOfCells.swift; sourceTree = "<group>"; };
 		E798C36F1D2169B4004CD5C6 /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
-		E798C3721D243FD0004CD5C6 /* CellHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellHelpers.swift; sourceTree = "<group>"; };
-		E798C3741D25B023004CD5C6 /* CellInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellInterface.swift; sourceTree = "<group>"; };
-		E798C3761D25B127004CD5C6 /* ChangedCellAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangedCellAdapter.swift; sourceTree = "<group>"; };
-		E798C3781D25B2FD004CD5C6 /* UnchangedCellAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnchangedCellAdapter.swift; sourceTree = "<group>"; };
 		E798C37A1D2A73BB004CD5C6 /* CellAbsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellAbsFactory.swift; sourceTree = "<group>"; };
+		E798C37C1D2A9B4B004CD5C6 /* CellHelpers_v1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellHelpers_v1.swift; sourceTree = "<group>"; };
+		E798C37D1D2A9B4B004CD5C6 /* CellInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellInterface.swift; sourceTree = "<group>"; };
+		E798C37E1D2A9B4B004CD5C6 /* ChangedCellAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChangedCellAdapter.swift; sourceTree = "<group>"; };
+		E798C37F1D2A9B4B004CD5C6 /* UnchangedCellAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnchangedCellAdapter.swift; sourceTree = "<group>"; };
 		E7D0015B1D12D40A00A26114 /* Custom-table-view.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Custom-table-view.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D0015E1D12D40A00A26114 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7D001631D12D40A00A26114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,7 +111,6 @@
 				E798C3511D216985004CD5C6 /* Changeable */,
 				E798C3541D216985004CD5C6 /* Unchangeable */,
 				E798C3711D243FAE004CD5C6 /* Helpers */,
-				E798C3741D25B023004CD5C6 /* CellInterface.swift */,
 				E798C37A1D2A73BB004CD5C6 /* CellAbsFactory.swift */,
 			);
 			path = Cell;
@@ -122,7 +121,6 @@
 			children = (
 				E798C3521D216985004CD5C6 /* TableSectionChangeableCell.swift */,
 				E798C3531D216985004CD5C6 /* TableSectionChangeableCell.xib */,
-				E798C3761D25B127004CD5C6 /* ChangedCellAdapter.swift */,
 			);
 			path = Changeable;
 			sourceTree = "<group>";
@@ -132,7 +130,6 @@
 			children = (
 				E798C3551D216985004CD5C6 /* TableSectionUnchangeableCell.swift */,
 				E798C3561D216985004CD5C6 /* TableSectionUnchangeableCell.xib */,
-				E798C3781D25B2FD004CD5C6 /* UnchangedCellAdapter.swift */,
 			);
 			path = Unchangeable;
 			sourceTree = "<group>";
@@ -166,7 +163,6 @@
 		E798C3711D243FAE004CD5C6 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				E798C3721D243FD0004CD5C6 /* CellHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -232,6 +228,10 @@
 		E7D001B81D17F62900A26114 /* Trash */ = {
 			isa = PBXGroup;
 			children = (
+				E798C37C1D2A9B4B004CD5C6 /* CellHelpers_v1.swift */,
+				E798C37D1D2A9B4B004CD5C6 /* CellInterface.swift */,
+				E798C37E1D2A9B4B004CD5C6 /* ChangedCellAdapter.swift */,
+				E798C37F1D2A9B4B004CD5C6 /* UnchangedCellAdapter.swift */,
 				E7D001B91D17F62900A26114 /* TableCustom.swift */,
 				E7D001BA1D17F62900A26114 /* TableCustom.xib */,
 			);
@@ -329,9 +329,8 @@
 			files = (
 				E7D001911D13F9FA00A26114 /* UIColor.swift in Sources */,
 				E798C36B1D216985004CD5C6 /* TableSectionHeader.swift in Sources */,
-				E798C3791D25B2FD004CD5C6 /* UnchangedCellAdapter.swift in Sources */,
-				E798C3771D25B127004CD5C6 /* ChangedCellAdapter.swift in Sources */,
 				E7D001C71D1819AC00A26114 /* MainViewController.swift in Sources */,
+				E798C3831D2A9B4B004CD5C6 /* UnchangedCellAdapter.swift in Sources */,
 				E798C37B1D2A73BB004CD5C6 /* CellAbsFactory.swift in Sources */,
 				E7D0015F1D12D40A00A26114 /* AppDelegate.swift in Sources */,
 				E7D001B71D17F4FE00A26114 /* DataModel.swift in Sources */,
@@ -340,13 +339,14 @@
 				E7D001941D14004000A26114 /* String.swift in Sources */,
 				E7D001BB1D17F62900A26114 /* TableCustom.swift in Sources */,
 				E798C3671D216985004CD5C6 /* CustomTable.swift in Sources */,
-				E798C3751D25B023004CD5C6 /* CellInterface.swift in Sources */,
 				E798C3691D216985004CD5C6 /* TableSectionFooter.swift in Sources */,
 				E7D001921D13F9FA00A26114 /* UIView_Borders.swift in Sources */,
 				E798C36E1D216985004CD5C6 /* TableSectionsOfCells.swift in Sources */,
 				E798C36D1D216985004CD5C6 /* TableCustomCotroller.swift in Sources */,
+				E798C3811D2A9B4B004CD5C6 /* CellInterface.swift in Sources */,
+				E798C3821D2A9B4B004CD5C6 /* ChangedCellAdapter.swift in Sources */,
 				E798C3651D216985004CD5C6 /* TableSectionUnchangeableCell.swift in Sources */,
-				E798C3731D243FD0004CD5C6 /* CellHelpers.swift in Sources */,
+				E798C3801D2A9B4B004CD5C6 /* CellHelpers_v1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

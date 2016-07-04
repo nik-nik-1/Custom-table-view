@@ -20,8 +20,6 @@ class TableCustomCotroller: UITableViewController{
         }
     }
     
-    //    let name = (self.view as CustomTable).nameOfTableSectionInstanse
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,9 +28,6 @@ class TableCustomCotroller: UITableViewController{
         
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        //        let cellNib = UINib(nibName: "TableSectionCell", bundle: nil)
-        //        tableView.registerNib(cellNib, forCellReuseIdentifier: "TableSectionCell")
         
         initGestureOnView()
         
@@ -69,22 +64,6 @@ class TableCustomCotroller: UITableViewController{
         let cell = tableView.dequeueReusableCellWithIdentifier(nameOfTableSectionInstanse, forIndexPath: indexPath)
         
         
-        
-        
-//        let adapter: CellInterface
-//        
-//        if nameOfTableSectionInstanse == "TableSectionChangeableCell" {
-//            adapter = ChangedCellAdapter()
-//            adapter.initColumns(item: dataModel!.items[indexPath.row], cell: cell)
-//        } else if nameOfTableSectionInstanse == "TableSectionUnchangeableCell" {
-//            adapter = UnchangedCellAdapter()
-//            adapter.initColumns(item: dataModel!.items[indexPath.row], cell: cell)
-//        } else {
-//            //return cell
-//        }
-        
-        
-        
         //        if (cell == nil) {
         //////            // Load the nib and assign an owner
         //////            let topLevelObjects = NSBundle.mainBundle().loadNibNamed("TableSectionUnchangeableCell", owner: self, options: nil);
@@ -96,52 +75,10 @@ class TableCustomCotroller: UITableViewController{
         // Configure the cell..
         CellsFactory.factoryOfType(cell).setDataInCell(items: dataModel!.items[indexPath.row])
         
-        //        if self.dataModel != nil {
-        //            let massOfData = dataModel!.items[indexPath.row]
-        //
-        //
-        //
-        //            if cell is TableSectionChangeableCell || cell is TableSectionUnchangeableCell {
-        //                cell.column0?.text = massOfData[0] as? String
-        //                cell.column1?.text = (massOfData[1] as? Float)?.description
-        //                cell!.column2?.text = (massOfData[2] as? Float)?.description
-        //                cell!.column3?.text = (massOfData[3] as? Float)?.description
-        //            }
-        //        }
-        
-        
-        return cell
+         return cell
     }
     
-//    
-//    func setDataInCell (cell: CellOfItem, index indexPath: NSIndexPath) {
-//        //if self.dataModel != nil {
-//        let massOfData = dataModel!.items[indexPath.row]
-//        
-//        cell.column0Data = massOfData[0] as! String
-//        cell.column1Data = (massOfData[1] as! Float).description
-//        cell.column2Data = (massOfData[2] as! Float).description
-//        cell.column3Data = (massOfData[3] as! Float).description
-//    }
 
-    
-    //    func setDataInCell <T> (cell: T, indexPath: NSIndexPath) {
-    //        if self.dataModel != nil {
-    //            let massOfData = dataModel!.items[indexPath.row]
-    //
-    ////            if cell is TableSectionChangeableCell || cell is TableSectionUnchangeableCell {
-    //                cell.column0.text = massOfData[0] as? String
-    //                cell?.column1?.text = (massOfData[1] as? Float)?.description
-    //                cell?.column2?.text = (massOfData[2] as? Float)?.description
-    //                cell?.column3?.text = (massOfData[3] as? Float)?.description
-    ////            }
-    //        }
-    //
-    //    }
-    
-    
-    
-    
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         //
         //        let cell = cell as! TableSectionUnchangeableCell
@@ -216,50 +153,14 @@ class TableCustomCotroller: UITableViewController{
         return valueToReturn
     }
     
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {1
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-     if editingStyle == .Delete {
-     // Delete the row from the data source
-     tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-     } else if editingStyle == .Insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    //    //GENERIC Variable
+    //    func setDataInCell <T where T: CellData> (cell: T, indexPath: NSIndexPath) {
+    //        if self.dataModel != nil {
+    //            let massOfData = dataModel!.items[indexPath.row]
+    //
+    //            cell.setDataInCell (items: massOfData)
+    //        }
+    //    }
     
 }
 
