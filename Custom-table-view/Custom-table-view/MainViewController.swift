@@ -19,7 +19,6 @@ class MainViewController: UIViewController {
         let tableViewModel1 = TableViewModel()
         tableViewModel1.setNameOfTableSectionInstanse(true)
         table1.tableViewModel = tableViewModel1
-        //table1.canEditDataInCell = true
         table1.uptadeDataInTableFromViewModel()
 
         let tableViewModel2 = TableViewModel()
@@ -27,9 +26,5 @@ class MainViewController: UIViewController {
         table2.tableViewModel = tableViewModel2
         table2.uptadeDataInTableFromViewModel()
     }
-    
-//    let table1 = TableViewModel()
-//    //table1.
-//    let table2 = TableViewModel()
-
+ 
 }

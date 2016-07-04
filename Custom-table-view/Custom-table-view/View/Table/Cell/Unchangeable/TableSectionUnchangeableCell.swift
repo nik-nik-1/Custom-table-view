@@ -18,9 +18,6 @@ class TableSectionUnchangeableCell: UITableViewCell {
     @IBOutlet weak var column3: UILabel!
     
     
-//    //@IBOutlet weak var cellLabel: UILabel!
-    
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -6,6 +6,8 @@
 //  Copyright © 2016 mc373. All rights reserved.
 //
 
+//2 Pattern in Use: Adapter + Abstract Factory
+
 import Foundation
 import UIKit
 
