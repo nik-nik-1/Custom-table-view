@@ -38,6 +38,7 @@ extension TableSectionUnchangeableCell: CellData {
     }
 }
 
+
 class CellsFactory {
     
     //  Фабричный метод не переопределяется потомками.
