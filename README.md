@@ -2,7 +2,7 @@
 
 What is interesting here?:
 
-1. MVVVM 
+1. MVVM 
 2. Custom table with xib’s file (header+footer+cell)
 3. Two Pattern in use: Adapter + Abstract Factory in «CellAbsFactory.swift»
 4. Testing using "Swiftlint"
