@@ -5,7 +5,7 @@ What is interesting here?:
 1. MVVVM 
 2. Custom table with xib’s file (header+footer+cell)
 3. Two Pattern in Use: Adapter + Abstract Factory in «CellAbsFactory.swift»
-4. Еesting using "Swiftlint"
+4. Testing using "Swiftlint"
 
 
 <table border="0" width="100%" cellpadding="5" align="center" cellspacing = "2">
