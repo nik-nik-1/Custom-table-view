@@ -18,25 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="table1" translatesAutoresizingMaskIntoConstraints="NO" id="rfL-oj-jy6" userLabel="Custom Table (Changeable)" customClass="CustomTable" customModule="Custom_table_view" customModuleProvider="target">
-                                <rect key="frame" x="58" y="14" width="484" height="270"/>
+                            <view contentMode="scaleToFill" restorationIdentifier="table1" translatesAutoresizingMaskIntoConstraints="NO" id="rfL-oj-jy6" userLabel="Custom Table (Changeable)" customClass="CustomTable" customModule="Custom_table_view" customModuleProvider="target">
+                                <rect key="frame" x="58" y="14" width="484" height="282"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.91372549020000005" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="7YZ-oD-Gq3"/>
+                                    <constraint firstAttribute="height" constant="282" id="7YZ-oD-Gq3"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="CanEditDataInCell" value="YES"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" restorationIdentifier="table2" translatesAutoresizingMaskIntoConstraints="NO" id="KFt-KM-e1U" userLabel="Custom Table (UnChangeable)" customClass="CustomTable" customModule="Custom_table_view" customModuleProvider="target">
-                                <rect key="frame" x="72" y="300" width="484" height="270"/>
+                            <view contentMode="scaleToFill" restorationIdentifier="table2" translatesAutoresizingMaskIntoConstraints="NO" id="KFt-KM-e1U" userLabel="Custom Table (UnChangeable)" customClass="CustomTable" customModule="Custom_table_view" customModuleProvider="target">
+                                <rect key="frame" x="58" y="304" width="484" height="282"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="SdT-pE-NNS"/>
+                                    <constraint firstAttribute="height" constant="282" id="SdT-pE-NNS"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="CanEditDataInCell" value="NO"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -44,8 +38,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="rfL-oj-jy6" secondAttribute="trailing" constant="38" id="4oT-az-ZHg"/>
                             <constraint firstItem="KFt-KM-e1U" firstAttribute="leading" secondItem="Coe-Ir-2XJ" secondAttribute="leadingMargin" constant="38" id="anj-33-Czx"/>
                             <constraint firstItem="rfL-oj-jy6" firstAttribute="leading" secondItem="Coe-Ir-2XJ" secondAttribute="leadingMargin" constant="38" id="ddg-cZ-22L"/>
-                            <constraint firstItem="KFt-KM-e1U" firstAttribute="top" secondItem="rfL-oj-jy6" secondAttribute="bottom" constant="46" id="fSB-ze-Wsi"/>
-                            <constraint firstItem="rfL-oj-jy6" firstAttribute="top" secondItem="guV-Hb-nwP" secondAttribute="bottom" constant="23" id="gsJ-iC-ZA4"/>
+                            <constraint firstItem="KFt-KM-e1U" firstAttribute="top" secondItem="rfL-oj-jy6" secondAttribute="bottom" constant="8" id="fSB-ze-Wsi"/>
+                            <constraint firstItem="rfL-oj-jy6" firstAttribute="top" secondItem="guV-Hb-nwP" secondAttribute="bottom" constant="-6" id="gsJ-iC-ZA4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KFt-KM-e1U" secondAttribute="trailing" constant="38" id="nGd-Nt-sIe"/>
                         </constraints>
                     </view>

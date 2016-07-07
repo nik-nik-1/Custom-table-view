@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E722954F1D2E763600B8CCC2 /* UIView_Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E722954E1D2E763600B8CCC2 /* UIView_Borders.swift */; };
 		E798C3631D216985004CD5C6 /* TableSectionChangeableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3521D216985004CD5C6 /* TableSectionChangeableCell.swift */; };
 		E798C3641D216985004CD5C6 /* TableSectionChangeableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E798C3531D216985004CD5C6 /* TableSectionChangeableCell.xib */; };
 		E798C3651D216985004CD5C6 /* TableSectionUnchangeableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798C3551D216985004CD5C6 /* TableSectionUnchangeableCell.swift */; };
@@ -30,7 +31,6 @@
 		E7D001661D12D40A00A26114 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D001651D12D40A00A26114 /* Assets.xcassets */; };
 		E7D001691D12D40A00A26114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D001671D12D40A00A26114 /* LaunchScreen.storyboard */; };
 		E7D001911D13F9FA00A26114 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D0018F1D13F9FA00A26114 /* UIColor.swift */; };
-		E7D001921D13F9FA00A26114 /* UIView_Borders.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001901D13F9FA00A26114 /* UIView_Borders.swift */; };
 		E7D001941D14004000A26114 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001931D14004000A26114 /* String.swift */; };
 		E7D001B71D17F4FE00A26114 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001B61D17F4FE00A26114 /* DataModel.swift */; };
 		E7D001BB1D17F62900A26114 /* TableCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D001B91D17F62900A26114 /* TableCustom.swift */; };
@@ -39,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E722954E1D2E763600B8CCC2 /* UIView_Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Borders.swift; sourceTree = "<group>"; };
 		E798C3521D216985004CD5C6 /* TableSectionChangeableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionChangeableCell.swift; sourceTree = "<group>"; };
 		E798C3531D216985004CD5C6 /* TableSectionChangeableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableSectionChangeableCell.xib; sourceTree = "<group>"; };
 		E798C3551D216985004CD5C6 /* TableSectionUnchangeableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableSectionUnchangeableCell.swift; sourceTree = "<group>"; };
@@ -63,7 +64,6 @@
 		E7D001651D12D40A00A26114 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		E7D001681D12D40A00A26114 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7D0018F1D13F9FA00A26114 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
-		E7D001901D13F9FA00A26114 /* UIView_Borders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView_Borders.swift; sourceTree = "<group>"; };
 		E7D001931D14004000A26114 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		E7D001B61D17F4FE00A26114 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		E7D001B91D17F62900A26114 /* TableCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableCustom.swift; sourceTree = "<group>"; };
@@ -203,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				E7D0018E1D13F9FA00A26114 /* Extension */,
-				E7D001901D13F9FA00A26114 /* UIView_Borders.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -228,6 +227,7 @@
 		E7D001B81D17F62900A26114 /* Trash */ = {
 			isa = PBXGroup;
 			children = (
+				E722954E1D2E763600B8CCC2 /* UIView_Borders.swift */,
 				E798C37C1D2A9B4B004CD5C6 /* CellHelpers_v1.swift */,
 				E798C37D1D2A9B4B004CD5C6 /* CellInterface.swift */,
 				E798C37E1D2A9B4B004CD5C6 /* ChangedCellAdapter.swift */,
@@ -260,6 +260,7 @@
 				E7D001571D12D40A00A26114 /* Sources */,
 				E7D001581D12D40A00A26114 /* Frameworks */,
 				E7D001591D12D40A00A26114 /* Resources */,
+				E722954D1D2E546D00B8CCC2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -322,11 +323,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E722954D1D2E546D00B8CCC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7D001571D12D40A00A26114 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E722954F1D2E763600B8CCC2 /* UIView_Borders.swift in Sources */,
 				E7D001911D13F9FA00A26114 /* UIColor.swift in Sources */,
 				E798C36B1D216985004CD5C6 /* TableSectionHeader.swift in Sources */,
 				E7D001C71D1819AC00A26114 /* MainViewController.swift in Sources */,
@@ -340,7 +358,6 @@
 				E7D001BB1D17F62900A26114 /* TableCustom.swift in Sources */,
 				E798C3671D216985004CD5C6 /* CustomTable.swift in Sources */,
 				E798C3691D216985004CD5C6 /* TableSectionFooter.swift in Sources */,
-				E7D001921D13F9FA00A26114 /* UIView_Borders.swift in Sources */,
 				E798C36E1D216985004CD5C6 /* TableSectionsOfCells.swift in Sources */,
 				E798C36D1D216985004CD5C6 /* TableCustomCotroller.swift in Sources */,
 				E798C3811D2A9B4B004CD5C6 /* CellInterface.swift in Sources */,

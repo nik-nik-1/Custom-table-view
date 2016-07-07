@@ -9,29 +9,29 @@
 import Foundation
 
 class TableViewModel {
-    
-    //MARK: filds of Data
-    let dataModel = DataModel()
-    var nameOfTableSectionInstanse:String?
-    static let canEditDataInCellBydefault = false
-    var canEditDataInCellBydefault: Bool {return TableViewModel.canEditDataInCellBydefault }
-    
-    
-    //MARK: func. of module
-    func setNameOfTableSectionInstanse(inputParam:Bool) {
-        
-        nameOfTableSectionInstanse = TableViewModel.getNameOfTableSectionInstanse(inputParam)
-    }
-    
-    static func getNameOfTableSectionInstanse(inputParam:Bool? = nil) -> String {
-        
-        var param = inputParam
-        
-        if inputParam == nil {
-            param = canEditDataInCellBydefault
-        }
-        
-        return param == true ? "TableSectionChangeableCell" : "TableSectionUnchangeableCell"
-    }
-    
+
+	//MARK: filds of Data
+	let dataModel = DataModel()
+	var nameOfTableSectionInstanse: String?
+	static let canEditDataInCellBydefault = false
+	var canEditDataInCellBydefault: Bool {return TableViewModel.canEditDataInCellBydefault }
+
+
+	//MARK: func. of module
+	func setNameOfTableSectionInstanse(inputParam: Bool) {
+
+		nameOfTableSectionInstanse = TableViewModel.getNameOfTableSectionInstanse(inputParam)
+	}
+
+	static func getNameOfTableSectionInstanse(inputParam: Bool? = nil) -> String {
+
+		var param = inputParam
+
+		if inputParam == nil {
+			param = canEditDataInCellBydefault
+		}
+
+		return param == true ? "TableSectionChangeableCell" : "TableSectionUnchangeableCell"
+	}
+
 }

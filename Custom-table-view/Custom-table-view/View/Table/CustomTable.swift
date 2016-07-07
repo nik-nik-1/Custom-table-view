@@ -11,9 +11,9 @@
 import UIKit
 
 protocol WorkWithData {
-    
+
     func uptadeDataInTableFromViewModel()
-    
+
 }
 
 @IBDesignable
@@ -27,81 +27,77 @@ class CustomTable: UIView {
             sectionOfCellinTable.tableViewModel         = tableViewModel
         }
     }
-    
+
     @IBOutlet weak var headerOfTable: TableSectionHeader!
     @IBOutlet weak var footerOfTable: TableSectionFooter!
     @IBOutlet weak var sectionOfCellinTable: TableSectionsOfCells!
-    
-    //var instanceOfController: CustonTableViewRedirect
-    
-    
-    
+
     var canEditDataInCell: Bool {
         get {
             return customTableViewController.getParamCanEditDataInCell()
         }
-        
+
         set {
             customTableViewController.setNameOfTableSectionInstanse(newValue)
         }
     }
-    
+
    // Our custom view from the XIB file
     var view: UIView!
-    
+
     @IBOutlet private var customTableViewController: TableCustomCotroller!
-    
+
     override init(frame: CGRect) {
         // 1. setup any properties here
-        
+
         // 2. call super.init(frame:)
         super.init(frame: frame)
-        
+
         // 3. Setup view from .xib file
         xibSetup()
         //setupViewModel()
     }
-    
+
     required init?(coder aDecoder: NSCoder) {
         // 1. setup any properties here
-        
+
         // 2. call super.init(coder:)
         super.init(coder: aDecoder)
-        
+
         // 3. Setup view from .xib file
         xibSetup()
         //setupViewModel()
     }
-    
+
     func setupViewModel() {
-        
-//        tableViewModel!.nameOfTableSectionInstanse = tableViewModel!.getNameOfTableSectionInstanse(CanEditDataInCell)
+
     }
-    
+
     func xibSetup() {
-        
+
         view = loadViewFromNib()
-        
+
         // use bounds not frame or it'll be offset
         view.frame = bounds
-        
+
+		//swiftlint:disable line_length
         // Make the view stretch with containing view
         view.autoresizingMask = [UIViewAutoresizing.FlexibleWidth, UIViewAutoresizing.FlexibleHeight]
-        
+		//swiftlint:enable line_length
+
         // Adding custom subview on top of our view (over any custom drawing > see note below)
         addSubview(view)
 
-                
     }
-    
+
     func loadViewFromNib() -> UIView {
-        
+
         let bundle = NSBundle(forClass: self.dynamicType)
         let nib = UINib(nibName: "CustomTable", bundle: bundle)
-        
+
         // Assumes UIView is top level and only object in CustomView.xib file
-        let view = nib.instantiateWithOwner(self, options: nil)[0] as! UIView
-        return view
+        let view = nib.instantiateWithOwner(self, options: nil)[0] as? UIView
+        return view!
     }
 
     //MARK: func. for controll
@@ -110,5 +106,5 @@ class CustomTable: UIView {
         headerOfTable.uptadeDataInTableFromViewModel()
         footerOfTable.uptadeDataInTableFromViewModel()
     }
-    
+
 }

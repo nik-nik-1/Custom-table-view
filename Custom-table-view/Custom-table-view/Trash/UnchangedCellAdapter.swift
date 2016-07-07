@@ -9,14 +9,14 @@
 //import UIKit
 //
 //class UnchangedCellAdapter: CellInterface {
-//    
+//
 //    var internaLCell = TableSectionUnchangeableCell()
-//    
+//
 //    func initColumns(item massOfData: DataModel.ItemsInArray) {
 //        let massOfData = massOfData
-//        
+//
 //        internaLCell = cell as! TableSectionUnchangeableCell
-//        
+//
 //        internaLCell.column0Data = massOfData[0] as! String
 //        internaLCell.column1Data = (massOfData[1] as! Float).description
 //        internaLCell.column2Data = (massOfData[2] as! Float).description

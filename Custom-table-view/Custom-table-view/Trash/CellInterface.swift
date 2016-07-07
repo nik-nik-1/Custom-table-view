@@ -9,7 +9,7 @@
 //import UIKit
 //
 //protocol CellInterface {
-//    
+//
 //    func initColumns(item massOfData: DataModel.ItemsInArray)
-//    
+//
 //}
