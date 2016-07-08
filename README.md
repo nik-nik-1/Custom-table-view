@@ -5,7 +5,7 @@ What is interesting here?:
 1. MVVM 
 2. Custom table with xib’s file (header+footer+cell)
 3. Two Pattern in use: Adapter + Abstract Factory in «CellAbsFactory.swift»
-4. Testing using "Swiftlint"
+4. Has been tested using <a href="https://github.com/realm/SwiftLint">SwiftLint</a>
 
 
 <table border="0" width="100%" cellpadding="5" align="center" cellspacing = "2">
